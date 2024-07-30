@@ -1,9 +1,12 @@
 'use strict';
 
 
-                        /* ==============
-                        MAIN - SECTION
+
+                        /* =================
+                            MAIN - SECTION
                         ============== */
+
+
 
 //modal variables
 const modal = document.querySelector('[data-modal]');
@@ -22,9 +25,12 @@ modalCloseBtn.addEventListener('click', modalCloseFunc);
 
 
 
+
                         /* ==================
                         NOTIFICATION TOAST
                         ==================  */
+
+
 
 // notification toast variables
 const notificationToast = document.querySelector('[data-toast]');
@@ -34,3 +40,9 @@ const toastCloseBtn = document.querySelector('[data-toast-close]');
 toastCloseBtn.addEventListener('click', () => {
     notificationToast.classList.add('closed');
 })
+
+
+
+                            /* ==================
+                                    HEADER
+                            =================  */
