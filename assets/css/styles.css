@@ -124,9 +124,16 @@
  }
 
 
-                                    /* ==============
-                                    MAIN - SECTION
-                                    ============== */
+ /* ==== RUSED STYLES ==== */
+
+ .container {
+   padding: 0px 15px;
+ }
+
+
+      /* ===========================================
+                MAIN - SECTION
+   ============================================ */
 
  /* === overlay subsection ===  */
 
@@ -376,6 +383,40 @@
  }
 
 
+
+
                            /* ==================
                                        HEADER
                               ==================  */
+
+.header-top,
+.header-user-actions,
+.desktop-navigation-menu {
+   display: none;
+}
+
+.header-main {
+   padding: 20px 0px;
+   border-bottom: 1px solid var(--cultured);
+}
+
+.header-logo {
+   margin-bottom: 20px;
+}
+
+.header-logo img {
+   margin: auto;
+}
+
+.header-search-container {
+   position: relative;
+}
+
+.header-search-container .search-field {
+   font-size: var(--fs-7);
+   color: var(--onyx);
+   padding: 10px 15px;
+   padding-right: 50px;
+   border: 1px solid var(--cultured);
+   border-radius: var(--border-radius-md);
+}
