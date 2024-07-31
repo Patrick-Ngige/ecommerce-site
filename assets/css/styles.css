@@ -420,3 +420,23 @@
    border: 1px solid var(--cultured);
    border-radius: var(--border-radius-md);
 }
+
+.search-field::-webkit-search-cancel-button {
+   display: none;
+}
+
+.search-btn {
+   background: var(--white);
+   position: absolute;
+   top: 50%;
+   right: 2px;
+   transform: translateY(-50%);
+   color: var(--onyx);
+   font-size: 18px;
+   padding: 8px 15px;
+   transition: color var(--transition-timing);
+}
+
+.search-btn:hover {
+   color: var(--salmon-pink);
+}
