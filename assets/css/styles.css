@@ -699,3 +699,13 @@
    object-fit: cover;
    object-position: right;
 }
+
+.banner-content {
+   background: hsla(0, 0%, 100%, 0.8);
+   position: absolute;
+   bottom: 25px;
+   left: 25px;
+   right: 25px;
+   padding: 20px 25px;
+   border-radius: var(--border-radius-md);
+}
