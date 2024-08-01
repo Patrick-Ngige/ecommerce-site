@@ -709,3 +709,36 @@
    padding: 20px 25px;
    border-radius: var(--border-radius-md);
 }
+
+.banner-subtitle {
+   color: var(--salmon-pink);
+   font-size: var(--fs-7);
+   font-weight: var(--weight-500);
+   text-transform: capitalize;
+   letter-spacing: 2px;
+   margin-bottom: 10px;
+}
+
+.banner-title {
+   color: var(--eerie-black);
+   font-size: var(--fs-1);
+   text-transform: uppercase;
+   line-height: 1;
+   margin-bottom: 10px;
+}
+
+.banner-text {
+   display: none;
+}
+
+.banner-btn {
+   background: var(--salmon-pink);
+   color: var(--white);
+   width: max-content;
+   font-size: var(--fs-11);
+   font-weight: var(--weight-600);
+   text-transform: uppercase;
+   padding: 4px 10px;
+   border-radius: var(--border-radius-sm);
+   transition: var(--transition-timing);
+}
