@@ -764,3 +764,31 @@
    scroll-snap-type: inline mandatory;
    overscroll-behavior-inline: contain;
 }
+
+.category-item {
+   min-width: 100%;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   padding: 15px;
+   border: 2px solid var(--cultured);
+   scroll-snap-align: start;
+}
+
+.category-img-box {
+   background: var(--cultured);
+   border: 2px solid hsl(0, 0%, 80%);
+   padding: 10px;
+   border-radius: var(--border-radius-md);
+}
+
+.category-content-box {
+   width: 100%;
+}
+
+.category-content-flex {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 10px;
+}
