@@ -792,3 +792,22 @@
    align-items: center;
    margin-bottom: 10px;
 }
+
+.category-item-title {
+   color: var(--eerie-black);
+   font-size: var(--fs-9);
+   font-weight: var(--weight-600);
+   text-transform: uppercase;
+}
+
+.category-item-amount {
+   color: var(--sonic-silver);
+   font-size: var(--fs-11);
+}
+
+.category-btn {
+   color: var(--salmon-pink);
+   font-size: var(--fs-9);
+   font-weight: var(--weight-500);
+   text-transform: capitalize;
+}
