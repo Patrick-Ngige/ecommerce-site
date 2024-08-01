@@ -98,6 +98,7 @@
 
  body {
     background: var(--white);
+    padding-bottom: 60px;
  }
 
 
@@ -779,7 +780,7 @@
    background: var(--cultured);
    border: 2px solid hsl(0, 0%, 80%);
    padding: 10px;
-   border-radius: var(--border-radius-md);
+   border-radius: var(--border-radius-sm);
 }
 
 .category-content-box {
@@ -811,3 +812,4 @@
    font-weight: var(--weight-500);
    text-transform: capitalize;
 }
+
