@@ -746,3 +746,21 @@
 .banner-btn:hover {
    background: var(--eerie-black);
 }
+
+
+                  /* ==================
+                     CATEGORY
+                  ==================  */
+
+.category {
+   margin-bottom: 30px;
+}
+
+.category-item-container {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   overflow: auto hidden;
+   scroll-snap-type: inline mandatory;
+   overscroll-behavior-inline: contain;
+}
