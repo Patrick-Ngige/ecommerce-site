@@ -688,7 +688,7 @@
    max-height: 450px;
    aspect-ratio: 1 / 1;
    border-radius: var(--border-radius-md);
-   object-fit: cover;
+   overflow: hidden;
    scroll-snap-align: start;
 }
 
