@@ -969,3 +969,22 @@
    text-overflow: ellipsis;
    letter-spacing: 0.5px;
 }
+
+.sidebar .showcase-rating {
+   display: flex;
+   align-items: center;
+   color: var(--sandy-brown);
+   font-size: 13px;
+   padding: 4px 0;
+}
+
+.sidebar .price-box {
+   display: flex;
+   align-items: center;
+   gap: 15px;
+}
+
+.sidebar .price-box del {
+   color: var(--sonic-silver);
+   font-size: 13px;
+}
