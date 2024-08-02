@@ -940,3 +940,10 @@
    letter-spacing: 0.8px;
    margin-bottom: 15px;
 }
+
+.sidebar.showcase {
+   display: flex;
+   align-items: center;
+   gap: 15px;
+}
+
