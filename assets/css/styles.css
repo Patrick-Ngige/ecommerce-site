@@ -818,5 +818,17 @@
                PRODUCTS SIDEBAR
             ======================= */
 
-
-
+.sidebar {
+   background: var(--white);
+   position: fixed;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   max-width: 320px;
+   overflow-y: scroll;
+   overscroll-behavior: contain;
+   visibility: hidden;
+   transition: 0.5s ease;
+   z-index: 20;
+}
