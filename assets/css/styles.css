@@ -941,9 +941,31 @@
    margin-bottom: 15px;
 }
 
-.sidebar.showcase {
+.sidebar .showcase {
    display: flex;
    align-items: center;
    gap: 15px;
 }
 
+.sidebar .showcase:not(:last-child) {
+   margin-bottom: 15px;
+}
+
+.sidebar .showcase-img {
+   border-radius: var(--border-radius-sm);
+}
+
+.sidebar .showcase-content {
+   width: calc(100% - 90px);
+}
+
+.sidebar .showcase-title {
+   color: var(--onyx);
+   font-size: var(--fs-7);
+   font-weight: var(--weight-400);
+   text-transform: capitalize;
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   letter-spacing: 0.5px;
+}
