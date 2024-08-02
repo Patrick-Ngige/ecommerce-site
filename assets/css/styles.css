@@ -921,3 +921,22 @@
 .sidebar-submenu-title:hover {
    color: var(--eerie-black);
 }
+
+.sidebar-accordion-menu.active .add-icon,
+.sidebar-accordion-menu .remove-icon {
+   display: none;
+}
+
+.sidebar-accordion-menu .add-icon,
+.sidebar-accordion-menu.active .remove-icon {
+   display: block;
+}
+
+.sidebar .showcase-heading {
+   font-size: var(--fs-5);
+   font-weight: var(--weight-600);
+   color: var(--onyx);
+   text-transform: uppercase;
+   letter-spacing: 0.8px;
+   margin-bottom: 15px;
+}
