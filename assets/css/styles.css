@@ -822,7 +822,7 @@
    background: var(--white);
    position: fixed;
    top: 0;
-   left: 0;
+   left: 100%;
    bottom: 0;
    width: 100%;
    max-width: 320px;
@@ -831,4 +831,30 @@
    visibility: hidden;
    transition: 0.5s ease;
    z-index: 20;
+}
+
+.sidebar.active {
+   left: 0;
+   visibility: visible;
+}
+
+.sidebar-category {
+   margin-bottom: 15px;
+   padding-bottom: 15px;
+   border-bottom: 2px solid var(--cultured);
+}
+
+.sidebar-top {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 10px;
+}
+
+.sidebar-title {
+   color: var(--onyx);
+   font-size: var(--fs-5);
+   text-transform: uppercase;
+   letter-spacing: 0.8px;
+   font-weight: var(--weight-600);
 }
