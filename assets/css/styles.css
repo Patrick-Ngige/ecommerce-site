@@ -154,6 +154,15 @@
    background: hsl(0, 0%, 80%);
  }
 
+ .title {
+   color: var(--eerie-black);
+   font-size: var(--fs-5);
+   font-weight: var(--weight-600);
+   letter-spacing: 0.4px;
+   padding-bottom: 10px;
+   border-bottom: 2px solid var(--cultured);
+   margin-bottom: 30px;
+ }
 
 
       /* ===========================================
@@ -999,3 +1008,11 @@
                   /* =====================
                     PRODUCT MINIMAL
               ====================== */
+
+.product-minimal {
+   margin-bottom: 30px;
+}
+
+.product-minimal .product-showcase {
+   margin-bottom: 10px;
+}
