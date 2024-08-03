@@ -1022,11 +1022,11 @@
    align-items: center;
    overflow-x: auto;
    overscroll-behavior-inline: contain;
-   scroll-snap-type: inline mandatory;
+   scroll-snap-type: inline mandatory; 
 }
 
-.product-minimal .showcase-container {
+ .product-minimal .showcase-container {
    min-width: 100%;
-   padding: 0 5px;
+   padding: 0 5px; 
    scroll-snap-align: start;
-}
+} 
