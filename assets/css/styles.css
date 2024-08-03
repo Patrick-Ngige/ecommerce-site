@@ -831,7 +831,7 @@
    background: var(--white);
    position: fixed;
    top: 0;
-   left: 100%;
+   left: 0;
    bottom: 0;
    width: 100%;
    max-width: 320px;
@@ -1020,7 +1020,7 @@
 .product-minimal .showcase-wrapper {
    display: flex;
    align-items: center;
-   overflow-x: auto;
+   overflow-x: scroll;
    overscroll-behavior-inline: contain;
    scroll-snap-type: inline mandatory; 
 }
@@ -1030,3 +1030,14 @@
    padding: 0 5px; 
    scroll-snap-align: start;
 } 
+
+.product-minimal .showcase {
+   display: flex;
+   width: 260px;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 15px;
+   border: 2px solid var(--cultured);
+   padding: 15px;
+   border-radius: var(--border-radius-md);
+}
