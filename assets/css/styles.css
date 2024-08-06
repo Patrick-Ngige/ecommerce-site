@@ -1150,3 +1150,33 @@
    margin-bottom: 10px;
    line-height: 1.5;
 }
+
+.product-featured .price-box {
+   font-size: var(--fs-3);
+   display: flex;
+   gap: 10px;
+   margin-bottom: 10px;
+}
+
+.product-featured .price {
+   color: var(--salmon-pink);
+   font-weight: var(--weight-700);
+}
+
+.product-featured del {
+   color: var(--sonic-silver);
+   font-weight: var(--weight-300);
+   font-size: var(--fs-4);
+}
+
+.product-featured .add-cart-btn {
+   background: var(--salmon-pink);
+   padding: 8px 15px;
+   color: var(--white);
+   font-size: var(--fs-9);
+   font-weight: var(--weight-700);
+   text-transform: uppercase;
+   border-radius: var(--border-radius-md);
+   margin-bottom: 15px;
+   transform: var(--transition-timing);
+}
