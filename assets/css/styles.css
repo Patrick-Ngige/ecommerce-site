@@ -1142,3 +1142,11 @@
    text-transform: uppercase;
    margin-bottom: 3px;
 }
+
+.product-featured .showcase-desc {
+   color: var(--sonic-silver);
+   font-size: var(--fs-7);
+   font-weight: var(--weight-300);
+   margin-bottom: 10px;
+   line-height: 1.5;
+}
