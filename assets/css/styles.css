@@ -1090,3 +1090,22 @@
    font-size: var(--fs-9);
    color: var(--sonic-silver);
 }
+
+
+                     /* =====================
+                     PRODUCT FEATURED
+                     ====================== */
+
+.product-featured {
+   margin-bottom: 30px;
+}
+
+.product-featured .showcase-wrapper {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   overflow-x: auto;
+   overscroll-behavior-inline: contain;
+   scroll-snap-type: inline mandatory;
+}
+
