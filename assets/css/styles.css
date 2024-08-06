@@ -1217,3 +1217,29 @@
    border-radius: 4px;
 }
 
+.product-featured .countdown-desc {
+   color: var(--eerie-black);
+   font-size: var(--fs-9);
+   font-weight: var(--weight-600);
+   text-transform: uppercase;
+   margin-bottom: 10px;
+}
+
+.product-featured .countdown {
+   display: flex;
+   gap: 5px;
+}
+
+.product-featured .countdown-content {
+   padding: 5px;
+   background: var(--cultured);
+   border-radius: var(--border-radius-md);
+   text-align: center;
+}
+
+.product-featured .display-number {
+   color: var(--eerie-black);
+   font-size: var(--fs-5);
+   font-weight: var(--weight-500);
+   min-width: 40px;
+}
