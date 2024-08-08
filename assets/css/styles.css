@@ -1254,3 +1254,10 @@
                         PRODUCT GRID
                    ===================  */
 
+.product-main { margin-bottom: 30px; }
+
+.product-grid {
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 25px;
+}
