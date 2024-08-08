@@ -1329,7 +1329,7 @@
    background: var(--white);
    color: var(--sonic-silver);
    margin-bottom: 5px;
-   border: 1px solid var(--cultured);
+   border: 2px solid var(--cultured);
    padding: 5px;
    border-radius: var(--border-radius-sm);
    transition: var(--transition-timing);
@@ -1376,3 +1376,7 @@
    color: var(--eerie-black);
    margin-bottom: 10px;
 }
+
+.product-grid .price { font-weight: var(--weight-700); }
+
+.product-grid del { color: var(--sonic-silver); }
