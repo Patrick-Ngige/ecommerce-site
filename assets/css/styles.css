@@ -1323,3 +1323,19 @@
 }
 
 .product-grid .showcase:hover .showcase-actions { transform: translateX(0) }
+
+.product-grid .btn-action {
+   background: var(--white);
+   color: var(--sonic-silver);
+   margin-bottom: 5px;
+   border: 1px solid var(--cultured);
+   padding: 5px;
+   border-radius: var(--border-radius-sm);
+   transition: var(--transition-timing);
+}
+
+.product-grid .btn-action:hover {
+   background: var(--eerie-black);
+   color: var(--white);
+   border-color: var(--eerie-black);
+}
