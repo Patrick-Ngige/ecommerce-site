@@ -1339,3 +1339,21 @@
    color: var(--white);
    border-color: var(--eerie-black);
 }
+
+.product-grid .showcase-category {
+   color: var(--salmon-pink);
+   font-size: var(--fs-9);
+   font-weight: var(--weight-600);
+   text-transform: uppercase;
+   margin-bottom: 10px;
+}
+
+.product-grid .showcase-title {
+   color: var(--sonic-silver);
+   font-size: var(--fs-8);
+   font-weight: var(--weight-300);
+   text-transform: capitalize;
+   letter-spacing: 1px;
+   margin-bottom: 10px;
+   transition: var(--transition-timing);
+}
