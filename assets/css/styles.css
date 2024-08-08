@@ -1261,3 +1261,10 @@
    grid-template-columns: 1fr;
    gap: 25px;
 }
+
+.product-grid .showcase {
+   border: 1px solid var(--cultured);
+   border-radius: var(--border-radius-md);
+   overflow: hidden;
+   transition: var(--transition-timing);
+}
