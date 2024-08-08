@@ -1283,6 +1283,7 @@
 .product-grid .product-img.default {
    position: relative;
    z-index: 1;
+   margin-bottom: 10px;
 }
 
 .product-grid .product-img.hover {
@@ -1357,3 +1358,8 @@
    margin-bottom: 10px;
    transition: var(--transition-timing);
 }
+
+.product-grid .showcase-title:hover {
+   color: var(--eerie-black);
+}
+
