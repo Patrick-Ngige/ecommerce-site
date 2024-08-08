@@ -1322,6 +1322,10 @@
    padding: 5px 40px;
 }
 
+.product-grid .showcase-badge.angle { background: var(--eerie-black); }
+
+.product-grid .showcase-badge.pink { background: var(--salmon-pink); }
+
 .product-grid .showcase-actions {
    position: absolute;
    top: 10px;
