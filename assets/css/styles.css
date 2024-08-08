@@ -1363,3 +1363,16 @@
    color: var(--eerie-black);
 }
 
+.product-grid .showcase-rating {
+   display: flex;
+   color: var(--sandy-brown);
+   margin-bottom: 10px;
+}
+
+.product-grid .price-box {
+   display: flex;
+   gap: 10px;
+   font-size: var(--fs-7);
+   color: var(--eerie-black);
+   margin-bottom: 10px;
+}
