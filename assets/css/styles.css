@@ -1408,3 +1408,22 @@
    text-align: center;
    margin-bottom: 25px;
 }
+
+.testimonial-banner {
+   margin: auto;
+   margin-bottom: 20px;
+   border-radius: 50%;
+}
+
+.testimonial-name {
+   font-weight: var(--weight-700);
+   text-transform: uppercase;
+   color: var(--sonic-silver);
+   margin-bottom: 5px;
+}
+
+.testimonial-title {
+   color: var(--onyx);
+   font-size: var(--fs-7);
+   margin-bottom: 15px;
+}
