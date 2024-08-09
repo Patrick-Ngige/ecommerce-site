@@ -1490,3 +1490,9 @@
    text-transform: capitalize;
    margin-bottom: 5px;
 }
+
+.cta-text {
+   color: var(--sonic-silver);
+   font-size: var(--fs-7);
+   margin-bottom: 5px;
+}
