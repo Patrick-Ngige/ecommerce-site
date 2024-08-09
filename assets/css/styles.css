@@ -1427,3 +1427,15 @@
    font-size: var(--fs-7);
    margin-bottom: 15px;
 }
+
+.quatation-img {
+   margin: auto;
+   margin-bottom: 10px;
+}
+
+.testimonial-desc {
+   max-width: 70%;
+   margin: auto;
+   color: var(--sonic-silver);
+   font-size: var(--fs-7);
+}
