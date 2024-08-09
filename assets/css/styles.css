@@ -1483,3 +1483,10 @@
    border-radius: var(--border-radius-sm);
    margin-bottom: 5px;
 }
+
+.cta-title {
+   color: var(--onyx);
+   font-size: var(--fs-5);
+   text-transform: capitalize;
+   margin-bottom: 5px;
+}
