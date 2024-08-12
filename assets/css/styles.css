@@ -1571,3 +1571,15 @@
    min-width: 100%;
    scroll-snap-align: start;
 }
+
+.blog-banner {
+   width: 100%;
+   border-radius: var(--border-radius-md);
+   margin-bottom: 20px;
+}
+
+.blog-category {
+   width: max-content;
+   color: var(--salmon-pink);
+   font-size: var(--fs-8);
+}
