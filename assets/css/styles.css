@@ -1520,3 +1520,10 @@
    border: 2px solid var(--cultured);
    border-radius: var(--border-radius-md);
 }
+
+.service-item {
+   min-width: 190px;
+   display: flex;
+   align-items: center;
+   gap: 15px;
+}
