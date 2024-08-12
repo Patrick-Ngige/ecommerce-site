@@ -1527,3 +1527,9 @@
    align-items: center;
    gap: 15px;
 }
+
+.service-icon {
+   font-size: 35px;
+   color: var(--salmon-pink);
+   transition: var(--transition-timing);
+}
