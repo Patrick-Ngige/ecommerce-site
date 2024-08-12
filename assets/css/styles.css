@@ -1555,3 +1555,19 @@
             /* ===================
                   BLOGS
          =================  */
+
+.blog { margin-bottom: 30px; }
+
+.blog-container {
+   display: flex;
+   align-items: flex-start;
+   gap: 15px;
+   overflow-x: auto;
+   overscroll-behavior-inline: contain;
+   scroll-snap-type: inline mandatory;
+}
+
+.blog-card {
+   min-width: 100%;
+   scroll-snap-align: start;
+}
