@@ -1504,3 +1504,19 @@
    font-weight: var(--weight-700);
    margin: auto;
 }
+
+
+            /* ===================
+                  SERVICES
+         =================  */
+
+.service-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 30px;
+   padding: 30px 15px;
+   border: 2px solid var(--cultured);
+   border-radius: var(--border-radius-md);
+}
