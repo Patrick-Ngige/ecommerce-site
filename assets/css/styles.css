@@ -1583,3 +1583,14 @@
    color: var(--salmon-pink);
    font-size: var(--fs-8);
 }
+
+.blog-title {
+   color: var(--eerie-black);
+   font-size: var(--fs-5);
+   font-weight: var(--weight-600);
+   line-height: 1.4;
+   margin-bottom: 5px;
+   transition: var(--transition-timing);
+}
+
+.blog-title:hover { color: var(--salmon-pink); }
