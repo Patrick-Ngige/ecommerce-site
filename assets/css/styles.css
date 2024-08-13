@@ -1620,3 +1620,21 @@ footer {
    padding-bottom: 15px;
    border-bottom: 2px solid var(--onyx);
 }
+
+.footer-category-title {
+   color: var(--salmon-pink);
+   font-size: var(--fs-6);
+   font-weight: var(--weight-600);
+   text-transform: uppercase;
+   margin-bottom: 15px;
+}
+
+.footer-category-box {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   align-items: center;
+   column-gap: 20px;
+   row-gap: 3px;
+   margin-bottom: 15px;
+}
