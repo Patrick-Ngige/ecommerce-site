@@ -1638,3 +1638,18 @@ footer {
    row-gap: 3px;
    margin-bottom: 15px;
 }
+
+.category-box-title {
+   color: var(--spanish-gray);
+   font-size: var(--fs-8);
+   font-weight: var(--weight-600);
+   text-transform: uppercase;
+}
+
+.footer-category-link {
+   position: relative;
+   color: var(--sonic-silver);
+   font-size: var(--fs-7);
+   text-transform: capitalize;
+   transition: var(--transition-timing);
+}
