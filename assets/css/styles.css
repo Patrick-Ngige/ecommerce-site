@@ -1697,3 +1697,27 @@ footer {
    width: 60px;
    height: 1px;
 }
+
+.footer-nav-item { padding: 3px 0; }
+
+.footer-nav-link,
+.footer-nav-item .content {
+   width: max-content;
+   color: var(--sonic-silver);
+   font-size: var(--fs-7);
+   text-transform: capitalize;
+   transition: var(--transition-timing);
+}
+
+.footer-nav-link:hover { color: var(--salmon-pink) }
+
+.footer-nav-item.flex {
+   display: flex;
+   align-items: flex-start;
+   gap: 10px;
+}
+
+.footer-nav-item .content {
+   font-style: normal;
+   margin-bottom: 5px;
+}
