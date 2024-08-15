@@ -1911,6 +1911,10 @@ footer {
       transition: var(--transition-timing);
    }
 
+   .header-top-actions select:hover { color: var(--eerie-black); }
+
+   .header-search-container { min-width: 300px; }
+
 }
 
 
