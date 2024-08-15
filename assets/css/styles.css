@@ -1658,11 +1658,12 @@ footer {
 .footer-category-link:not(:last-child)::after {
    position: absolute;
    content: '';
-   top: 3px;
+   top: 1px;
    right: -10px;
    background: var(--sonic-silver);
    width: 1px;
    height: 15px;
+   /* margin-bottom: -15px; */
 }
 
 
@@ -1760,4 +1761,17 @@ footer {
 .copyright a {
    display: inline;
    color: inherit;
+}
+
+
+                      /* ============
+                  RESPONSIVENESS
+               ============  */
+
+/* LARGER THAN 480PX */
+
+@media (min-width: 480px) {
+
+   /* CUSTOM PROPERTY */
+
 }
