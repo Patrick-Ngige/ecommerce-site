@@ -1961,6 +1961,8 @@ footer {
 
    .blog-container { gap: 30px; }
 
+   .blog-card { min-width: calc(50% - 15px); }
+
    
 }
 
