@@ -1803,4 +1803,11 @@ footer {
    }
    
    .header-alert-news b { font-weight: var(--weight-500); }
+
+   .header-main { padding: 25px 0; }
+
+   .mobile-bottom-navigation {
+      border-top-left-radius: var(--border-radius-md);
+      border-top-right-radius: var(--border-radius-md);
+   }
 }
