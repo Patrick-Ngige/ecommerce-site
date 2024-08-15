@@ -1868,3 +1868,10 @@ footer {
    .cta-btn { --fs-9: 1rem; }
 
 }
+
+
+    /**
+      * FOOTER
+      */
+
+   .copyright { --fs-8: 0.875rem; }
