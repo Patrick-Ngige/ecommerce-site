@@ -1946,6 +1946,22 @@ footer {
 
 
    .product-featured .countdown { gap: 20px; }
+
+
+    /**
+     * CTA
+     */
+
+   .cta-container { aspect-ratio: 6 / 5; }
+
+
+    /**
+     * BLOG
+     */
+
+   .blog-container { gap: 30px; }
+
+   
 }
 
 
