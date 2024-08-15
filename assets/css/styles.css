@@ -1915,6 +1915,15 @@ footer {
 
    .header-search-container { min-width: 300px; }
 
+
+   /**
+     * BANNER
+     */
+   
+   .slider-item { aspect-ratio: 4 / 2; }
+
+   .banner-content { background: none; }
+   
 }
 
 
