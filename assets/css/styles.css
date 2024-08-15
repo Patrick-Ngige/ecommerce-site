@@ -1923,7 +1923,15 @@ footer {
    .slider-item { aspect-ratio: 4 / 2; }
 
    .banner-content { background: none; }
+
+
+   /**
+     * CATEGORY
+     */
    
+   .category-item-container { gap: 30px; }
+
+   .category-item { min-width: calc(50% - 15px); }
 }
 
 
