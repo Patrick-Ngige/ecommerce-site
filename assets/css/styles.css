@@ -2016,6 +2016,33 @@ footer {
 
    .newsletter { text-align: left; }
 
+
+   /**
+     * HEADER
+     */
+
+   .header-main .container { gap: 80px; }
+
+   .header-search-container { flex-grow: 1; }
+
+   /**
+     * BANNER
+     */
+
+   .slider-item {
+      aspect-ratio: auto;
+      height: 350px;
+   }
+
+   .banner-content { max-width: 380px; }
+
+   .banner-subtitle { --fs-7: 1.25rem; }
+
+   .banner-text { --fs-7: 1.125rem; }
+
+   .banner-text b { --fs-2: 1.875rem; }
+
+   .banner-btn { --fs-11: 0.75rem; }
 }
 
 
