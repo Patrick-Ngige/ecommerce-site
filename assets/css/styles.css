@@ -1867,11 +1867,31 @@ footer {
 
    .cta-btn { --fs-9: 1rem; }
 
-}
-
-
-    /**
+   /**
       * FOOTER
       */
 
-   .copyright { --fs-8: 0.875rem; }
+      .copyright { --fs-8: 0.875rem; }
+
+}
+
+/* LARGER THAN 570PX */
+
+@media (min-width: 570px) {
+
+   /**
+     * HEADER
+     */
+
+   .header-top .container,
+   .header-main .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+}
+
+
+
+    
