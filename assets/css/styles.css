@@ -1967,5 +1967,57 @@ footer {
 }
 
 
+/* LARGER THAN 768PX */
+
+@media (min-width: 768px) {
+
+   /**
+     * CUSTOM PROPERTY
+     */
+
+:root {
+
+   /**
+     * TYPOGRAPHY
+     */
+   
+   --fs-1: 2.375rem;
+
+}
+
+   /**
+     * BASE
+     */
+
+   html { font-size: 17px; }
+
+   /**
+     * REUSED STYLE
+     */
+
+   .container {
+      max-width: 750px;
+      margin: auto;
+   }
+
+   
+   /**
+     * MODAL
+     */
+
+   .modal-content {
+      display: flex;
+      align-items: center;
+      max-width: 750px;
+      width: fit-content;
+   }
+
+   .newsletter-img { display: block; }
+
+   .newsletter { text-align: left; }
+
+}
+
+
 
     
