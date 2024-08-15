@@ -1802,4 +1802,5 @@ footer {
       text-transform: uppercase;
    }
    
+   .header-alert-news b { font-weight: var(--weight-500); }
 }
