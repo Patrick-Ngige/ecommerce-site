@@ -2162,6 +2162,19 @@ footer {
    color: white;
   }
 
+  .header-user-actions {
+   display: flex;
+   align-items: center;
+   gap: 15px;
+  }
+
+  .header-user-actions .actions-btn {
+   position: relative;
+   font-size: 35px;
+   color: var(--onyx);
+   padding: 5px;
+  }
+
 
 }
 
