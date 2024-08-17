@@ -2188,6 +2188,27 @@ footer {
    border-radius: 20px;
   }
 
+  .desktop-navigation-menu { display: block; }
+
+  .desktop-menu-category-list {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+  }
+
+  .desktop-menu-category-list .menu-category:not(:nth-child(2)) { position: relative; }
+
+  .desktop-menu-category-list .menu-category > .menu-title {
+   position: relative;
+   color: var(--onyx);
+   font-size: var(--fs-7);
+   font-weight: var(--weight-600);
+   text-transform: uppercase;
+   padding: 15px 0;
+   transition: var(--transition-timing);
+  }
 
 }
 
