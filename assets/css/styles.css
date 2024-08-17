@@ -2240,9 +2240,9 @@ footer {
    border: 2px solid var(--cultured);
    box-shadow: 0 3px 5px hsla(0, 0%, 0%, 0.1);
    border-radius: var(--border-radius-md);
-   /* opacity: 0;
+   opacity: 0;
    visibility: hidden;
-   pointer-events: none; */
+   pointer-events: none;
    transition: var(--transition-timing);
    z-index: 5;
   }
@@ -2280,6 +2280,24 @@ footer {
    width: 100%;
    height: auto;
    border-radius: var(--border-radius-sm);
+  }
+
+  .dropdown-list {
+   position: absolute;
+   top: 100%;
+   left: 0;
+   width: 200px;
+   background: var(--white);
+   padding: 20px 0;
+   border-radius: var(--border-radius-md);
+   bottom: 2px solid var(--cultured);
+   box-shadow: 0 3px 5px hsla(0, 0%, 0%, 0.1);
+   transform: translateY(50px);
+   opacity: 0;
+   visibility: hidden;
+   pointer-events: none;
+   transition: var(--transition-timing);
+   z-index: 5;
   }
 
 }
