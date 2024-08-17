@@ -2270,6 +2270,18 @@ footer {
    transition: var(--transition-timing);
   }
 
+  .panel-list-item a:hover { color: var(--salmon-pink); }
+
+  .panel-list-item:not(:last-child) a { padding: 4px 0; }
+
+  .panel-list-item:last-child { margin-top: 20px; }
+
+  .panel-list-item img {
+   width: 100%;
+   height: auto;
+   border-radius: var(--border-radius-sm);
+  }
+
 }
 
 
