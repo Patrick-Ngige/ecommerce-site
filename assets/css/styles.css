@@ -2300,6 +2300,13 @@ footer {
    z-index: 5;
   }
 
+  .desktop-menu-category-list .menu-category:hover > .dropdown-list {
+   transform: translateY(0);
+   opacity: 1;
+   visibility: visible;
+   pointer-events: all;
+  }
+
 }
 
 
