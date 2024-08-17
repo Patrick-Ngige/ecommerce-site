@@ -2227,6 +2227,23 @@ footer {
 
   .desktop-menu-category-list .menu-category > .menu-title:hover::after { transform: scaleX(1); }
 
+  .dropdown-panel {
+   position: absolute;
+   top: 100%;
+   left: 0;
+   background: var(--white);
+   width: 100%;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 30px;
+   padding: 30px;
+   border: 2px solid var(--cultured);
+   box-shadow: 0 3px 5px hsla(0, 0%, 0%, 0.1);
+   border-radius: var(--border-radius-md);
+   opacity: 0;
+   visibility: hidden;
+  }
+
 }
 
 
