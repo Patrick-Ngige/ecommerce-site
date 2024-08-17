@@ -2247,6 +2247,13 @@ footer {
    z-index: 5px;
   }
 
+  .desktop-menu-category-list .menu-category:hover > .dropdown-panel {
+   transform: translateY(0);
+   opacity: 1;
+   visibility: visible;
+   pointer-events: all;
+  }
+
 }
 
 
