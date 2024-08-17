@@ -2107,5 +2107,34 @@ footer {
 }
 
 
+/* LARGER THAN 1024PX */
+
+@media (min-width: 1024px) {
+
+/**
+  * CUSTOM PROPERTIES
+  */
+
+  :root {
+
+/**
+  * TYPOGRAPHY
+  */
+
+  --fs-1: 2.625rem;
+  --fs-2: 1.125rem;
+
+  }
+
+
+  /**
+  * REUSED STYLES
+  */
+
+  .container { max-width: 980px; }
+
+}
+
+
 
     
