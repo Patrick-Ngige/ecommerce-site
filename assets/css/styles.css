@@ -2292,10 +2292,10 @@ footer {
    border-radius: var(--border-radius-md);
    bottom: 2px solid var(--cultured);
    box-shadow: 0 3px 5px hsla(0, 0%, 0%, 0.1);
-   transform: translateY(50px);
+   /* transform: translateY(50px);
    opacity: 0;
    visibility: hidden;
-   pointer-events: none;
+   pointer-events: none; */
    transition: var(--transition-timing);
    z-index: 5;
   }
@@ -2306,6 +2306,18 @@ footer {
    visibility: visible;
    pointer-events: all;
   }
+
+  .dropdown-list .dropdown-item a {
+   color: var(--sonic-silver);
+   font-size: var(--fs-7);
+   text-transform: capitalize;
+   padding: 4px 20px;
+   transition: var(--transition-timing);
+  }
+
+  .dropdown-list .dropdown-item a:hover { color: var(--salmon-pink); }
+
+  
 
 }
 
