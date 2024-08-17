@@ -2133,6 +2133,36 @@ footer {
 
   .container { max-width: 980px; }
 
+  /**
+  * NOTIFICATION TOAST
+  */
+
+  .notification-toast { bottom: 30px; }
+
+  /**
+  * HEADER 
+  */
+
+  .header-social-container {
+   display: flex;
+   align-items: center;
+   gap: 5px;
+  }
+
+  .header-social-container .social-link {
+   padding: 5px;
+   background: hsl(0, 0%, 95%);
+   border-radius: var(--border-radius-sm);
+   color: var(--sonic-silver);
+   transition: var(--transition-timing);
+  }
+
+  .header-social-container .social-link:hover {
+   background: var(--salmon-pink);
+   color: white;
+  }
+
+
 }
 
 
