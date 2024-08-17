@@ -2175,6 +2175,19 @@ footer {
    padding: 5px;
   }
 
+  .header-user-actions .count {
+   position: relative;
+   top: -32px;
+   right: -10px;
+   background: var(--bittersweet);
+   color: var(--white);
+   font-size: 12px;
+   font-weight: var(--weight-500);
+   line-height: 1;
+   padding: 2px 4px;
+   border-radius: 20px;
+  }
+
 
 }
 
