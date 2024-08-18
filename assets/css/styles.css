@@ -2348,6 +2348,20 @@ footer {
 
   .category-img-box { padding: 10px; }
 
+   /**
+  * PRODUCT
+  */
+
+  .product-container .container {
+
+   position: relative;
+   display: flex;
+   align-items: flex-start;
+   gap: 30px;
+   margin-bottom: 30px;
+
+  }
+
 }
 
 
