@@ -2359,7 +2359,19 @@ footer {
    align-items: flex-start;
    gap: 30px;
    margin-bottom: 30px;
+  }
 
+  .sidebar {
+   visibility: visible;
+   position: sticky;
+   top: 30px;
+   left: 0;
+   padding: 0;
+   min-width: calc(25% - 15px);
+   margin-bottom: 30px;
+   overflow-y: auto;
+   overscroll-behavior: auto;
+   z-index: 0;
   }
 
 }
