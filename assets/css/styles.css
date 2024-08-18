@@ -2499,6 +2499,33 @@ footer {
    .product-featured .display-number { --fs-5: 1.125rem; }
 
    .product-grid { grid-template-columns: repeat(4, 1fr);}
+
+
+   /**
+     * TESTIMONIALS, CTA, SERVICES
+     */
+
+   .testimonial, .service {
+      min-width: calc(25% - 20px);
+      width: calc(25% - 20px);
+   }
+
+   .cta-container {
+      min-width: calc(50% - 20px);
+      width: calc(50% - 20px);
+      aspect-ratio: unset;
+   }
+
+   .service-container { 
+      justify-content: flex-start;
+      gap: 16px;
+      padding: 30px;
+   }
+   
+   .service-item { 
+      flex-direction: row;
+      text-align: left;
+   }
 }
 
 
