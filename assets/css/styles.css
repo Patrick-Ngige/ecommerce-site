@@ -2457,5 +2457,17 @@ footer {
 }
 
 
+/* SCREENS ABOVE 1200PX */
+
+@media (min-width: 1200px) {
+
+   /**
+     * RE-USED STYLE
+     */
+
+   .container { max-width: 1200px;}
+   
+}
+
 
     
