@@ -2431,6 +2431,15 @@ footer {
    min-width: 20%;
   }
 
+
+  /**
+    * BLOGS
+    */
+
+   .blog-card { min-width: calc(33.33% - 20px); }
+
+   .blog-title { --fs-5: 1rem; }
+
 }
 
 
