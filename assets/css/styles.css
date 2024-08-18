@@ -2339,6 +2339,15 @@ footer {
 
   .banner-btn { --fs-11: 0.875rem; }
 
+
+   /**
+  * CATEGORY
+  */
+
+  .category-item { min-width: calc(33.33% - 20px); }
+
+  .category-img-box { padding: 10px; }
+
 }
 
 
