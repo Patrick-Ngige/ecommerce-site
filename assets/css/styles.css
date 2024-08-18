@@ -2480,6 +2480,14 @@ footer {
 
    .slider-item:last-child .banner-img { object-position: top; }
    
+   
+   /**
+     * CATEGORY 
+     */
+
+   .category-item { min-width: calc(25% - 22.5px); }
+
+   .category-item-title { --fs-9: 0.824rem; }
 }
 
 
