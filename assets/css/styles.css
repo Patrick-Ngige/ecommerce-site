@@ -2440,6 +2440,20 @@ footer {
 
    .blog-title { --fs-5: 1rem; }
 
+
+   /**
+    * FOOTER
+    */
+
+  .footer-nav-list {
+   min-width: calc(20% - 16px);
+   width: calc(20% - 16px);
+  }
+
+  .footer-nav-list:last-child { display: none; }
+
+  .footer-bottom { margin-bottom: 0; }
+
 }
 
 
