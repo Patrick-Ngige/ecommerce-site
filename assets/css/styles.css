@@ -2488,6 +2488,17 @@ footer {
    .category-item { min-width: calc(25% - 22.5px); }
 
    .category-item-title { --fs-9: 0.824rem; }
+
+
+   /**
+     * PRODUCT
+     */
+
+   .product-featured .showcase > div { min-width: calc(50% - 10px); }
+
+   .product-featured .display-number { --fs-5: 1.125rem; }
+
+   .product-grid { grid-template-columns: repeat(4, 1fr);}
 }
 
 
