@@ -2374,6 +2374,33 @@ footer {
    z-index: 0;
   }
 
+  .sidebar-category {
+   padding: 20px;
+   margin-bottom: 30px;
+   border: 2px solid var(--cultured);
+   border-radius: var(--border-radius-md);
+  }
+
+  .sidebar-close-btn { display: none; }
+
+  .product-box { min-width: calc(75% - 15px); }
+
+  .product-minimal { margin-bottom: 20px; }
+
+  .product-minimal .product-showcase { 
+   min-width: calc(33.33% - 14px);
+   width: calc(33.33% - 14px);
+   flex-grow: 1;
+  }
+
+  .product-minimal .showcase-wrapper { gap: 10px; }
+
+  .product-minimal .showcase-container { padding: 2px; }
+
+  .product-featured .countdown-content { padding: 5px 10px; }
+
+  .product-grid { grid-template-columns: repeat(3, 1fr); }
+
 }
 
 
