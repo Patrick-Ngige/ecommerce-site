@@ -2466,6 +2466,19 @@ footer {
      */
 
    .container { max-width: 1200px;}
+
+   /**
+     * HEADER
+     */
+
+   .desktop-menu-category-list { gap: 45px;}
+
+
+   /**
+     * BANNER
+     */
+
+   .slider-item:last-child .banner-img { object-position: top; }
    
 }
 
