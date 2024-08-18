@@ -2006,7 +2006,7 @@ footer {
    /**
      * MODAL
      */
-
+     
    .modal-content {
       display: flex;
       align-items: center;
@@ -2554,6 +2554,41 @@ footer {
    }
 
    .footer-nav { padding-bottom: 50px;   }
+}
+
+
+/* SCREENS ABOVE 1400PX */
+
+@media (min-width: 1400px) {
+
+   /**
+     * BASE
+     */
+
+   html { font-size: 18px; }
+
+   
+    /**
+     * RE-USED STYLES
+     */
+
+   .container {
+      max-width: 1350px;
+   }
+
+
+    /**
+     * BANNER
+     */
+
+   .slider-item { height: 450px; }
+
+   .banner-content { 
+      left: 110px;
+      max-width: 460px;
+   }
+   
+
 }
 
 
