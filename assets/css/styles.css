@@ -2401,6 +2401,36 @@ footer {
 
   .product-grid { grid-template-columns: repeat(3, 1fr); }
 
+
+   /**
+  * CTA, TESTIMONIALS & SERVICE 
+  */
+
+  .testimonials-box {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: stretch;
+   column-gap: 30px;
+  }
+
+  .testimonial-card { margin-bottom: 0; }
+
+  .testimonial, .cta-container {
+   min-width: calc(50% - 15px);
+   width: calc(50% - 15px);
+   margin-bottom: 0;
+  }
+
+  .service { width: 100%; }
+
+  .service-container { gap: 0;}
+
+  .service-item {
+   flex-direction: column;
+   text-align: center;
+   min-width: 20%;
+  }
+
 }
 
 
