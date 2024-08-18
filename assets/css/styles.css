@@ -143,6 +143,8 @@
    background: transparent;
    border: 3px solid var(--white);
    border-radius: 20px;
+   height: 8px;
+
  }
 
  .has-scrollable:hover::-webkit-scrollbar-thumb {
@@ -2397,6 +2399,8 @@ footer {
 
   .product-minimal .showcase-container { padding: 2px; }
 
+  .product-container .showcase-content { padding: 5px 20px;}
+
   .product-featured .countdown-content { padding: 5px 10px; }
 
   .product-grid { grid-template-columns: repeat(3, 1fr); }
@@ -2500,6 +2504,8 @@ footer {
 
    .product-grid { grid-template-columns: repeat(4, 1fr);}
 
+   
+
 
    /**
      * TESTIMONIALS, CTA, SERVICES
@@ -2526,6 +2532,28 @@ footer {
       flex-direction: row;
       text-align: left;
    }
+
+   /**
+     * BLOGS
+     */
+
+   .blog { margin-bottom: 50px; }
+
+   .blog-card { min-width: calc(25% - 22.5px); }
+
+
+   /**
+     * FOOTER
+     */
+
+   footer { padding-top: 50px; }
+
+   .footer-category {
+      margin-bottom: 50px;
+      padding-bottom: 35px;
+   }
+
+   .footer-nav { padding-bottom: 50px;   }
 }
 
 
