@@ -1236,6 +1236,7 @@
    background: var(--cultured);
    border-radius: var(--border-radius-md);
    text-align: center;
+   cursor: pointer;
 }
 
 .product-featured .display-number {
@@ -2595,5 +2596,12 @@ footer {
 
 }
 
+.color1 {
+   color: var(--davys-gray);
+}
+
+.color2 {
+   color: var(--salmon-pink);
+}
 
     
