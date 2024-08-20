@@ -2369,7 +2369,8 @@ footer {
    top: 30px;
    left: 0;
    padding: 0;
-   min-width: calc(25% - 15px);
+   min-width: calc(25% - 45px);
+   width: calc(25% - 45px);;
    margin-bottom: 30px;
    overflow-y: auto;
    overscroll-behavior: auto;
@@ -2502,7 +2503,10 @@ footer {
 
    .product-featured .display-number { --fs-5: 1.125rem; }
 
-   .product-grid { grid-template-columns: repeat(4, 1fr);}
+   .product-grid { 
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+   }
 
    
 
