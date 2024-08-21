@@ -645,7 +645,7 @@
                 border-radius: 5px;
                 box-sizing: border-box;
             }
-            
+
             input::placeholder {
                 font-size: 0.75rem;
             }
@@ -740,21 +740,29 @@
                 background-color: hsl(353, 100%, 78%);
             }
 
+            .payment-options {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
             .image-checkbox {
-                display: inline;
-                position: relative;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
                 cursor: pointer;
-                margin: 10px;
             }
 
             .image-checkbox input[type="checkbox"] {
-                display: flex;
+                display: none;
             }
 
             .image-checkbox img {
-                width: 100px;
+                width: 75px;
                 height: 50px;
-                border: 1.5px solid transparent;
+                border: 2px solid transparent;
+                margin-left: 7px;
             }
 
             .image-checkbox input[type="checkbox"]:checked+img {
@@ -792,7 +800,6 @@
                         </div>
 
                         <input type="text" placeholder="Phone">
-
                     </form>
 
                 </div>
@@ -840,21 +847,29 @@
                 </div>
 
                 <div class="payment-method">
-                    <h2 class="title" style="width: 78%; margin-top: 50px;">PAYMENT METHOD</h2>
+                    <h2 class="title" style="width: 100%; margin-top: 50px;">PAYMENT METHOD</h2>
 
                     <div class="payment-options">
 
                         <label class="image-checkbox">
                             <input type="checkbox" name="image1">
-                            <img src="https://via.placeholder.com/100" alt="Image 1">
+                            <img src="./assets/images/payment methods/m-pesa.jpeg" alt="M-Pesa">
                         </label>
                         <label class="image-checkbox">
                             <input type="checkbox" name="image2">
-                            <img src="https://via.placeholder.com/100" alt="Image 2">
+                            <img src="./assets/images/payment methods/paypal.jpeg" alt="Paypal">
                         </label>
                         <label class="image-checkbox">
                             <input type="checkbox" name="image3">
-                            <img src="https://via.placeholder.com/100" alt="Image 3">
+                            <img src="./assets/images/payment methods/mastercad.jpeg" alt="Mastercard">
+                        </label>
+                        <label class="image-checkbox">
+                            <input type="checkbox" name="image3">
+                            <img src="./assets/images/payment methods/visa.jpeg" alt="Visa">
+                        </label>
+                        <label class="image-checkbox">
+                            <input type="checkbox" name="image3">
+                            <img src="./assets/images/payment methods/airtel-money.jpeg" alt="Airtel Money">
                         </label>
 
                     </div>
