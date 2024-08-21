@@ -618,14 +618,42 @@
     ================== -->
 
         <style>
+            form {
+                width: 100%;
+                margin: 0 auto;
+                padding: 20px;
+                border-radius: 5px;
+            }
+
+            .name {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            }
+
+            .name input {
+                width: 48%;
+            }
+
+            input[type="text"] {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1.5px solid hsl(0, 0%, 93%);
+                border-radius: 5px;
+                box-sizing: border-box;
+            }
+
             main {
                 width: 100%;
                 display: flex;
                 flex-direction: row;
-                row-gap: 20px ;
+                row-gap: 20px;
                 padding: 0 20px;
             }
-            .checkout-items {
+
+            .checkout-form {
                 display: flex;
                 flex-direction: column;
                 width: 100%;
@@ -644,55 +672,6 @@
                 padding-left: 20px;
             }
 
-            .product-img {
-                border: 1px solid hsl(0, 0%, 93%);
-                border-radius: 5px;
-
-            }
-
-            .product-info {
-                font-size: 0.875rem;
-                font-weight: 600;
-                color: hsl(0, 0%, 13%);
-            }
-
-            .p-info {
-                margin-bottom: 10px;
-            }
-
-            .p-price {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                width: 80%;
-                align-items: center;
-                align-content: center;
-                color: hsl(0, 0%, 47%);
-                font-weight: 600;
-            }
-
-            .p-size {
-                border: 1px solid hsl(0, 0%, 93%);
-                padding: 5px 8px;
-                border-radius: 5px;
-                background-color: hsl(0, 0%, 90%);
-            }
-
-            .p-num input {
-                border: 2px solid hsl(0, 0%, 93%);
-                padding: 5px 10px;
-                border-radius: 5px;
-                width: 85%;
-                font-size: 0.75rem;
-                font-weight: 500;
-                text-align: center;
-            }
-
-            .delete-icon {
-                cursor: pointer;
-                padding-right: 30px;
-            }
-
             .container-checkout {
                 display: flex;
                 flex-direction: column;
@@ -700,7 +679,7 @@
             }
 
             .total-amount {
-                width: 50%;
+                width: 45%;
                 display: flex;
                 flex-direction: column;
                 align-content: end;
@@ -755,6 +734,27 @@
             .checkout-btn button:hover {
                 background-color: hsl(353, 100%, 78%);
             }
+
+            .image-checkbox {
+                display: inline-block;
+                position: relative;
+                cursor: pointer;
+                margin: 10px;
+            }
+
+            .image-checkbox input[type="checkbox"] {
+                display: flex;
+            }
+
+            .image-checkbox img {
+                width: 100px;
+                height: 50px;
+                border: 1.5px solid transparent;
+            }
+
+            .image-checkbox input[type="checkbox"]:checked+img {
+                border: 2px solid hsl(353, 100%, 78%);
+            }
         </style>
 
         <div class="checkout-container" style="margin-top: 20px;">
@@ -764,31 +764,29 @@
                     PRODUCT LIST 
             ====================== -->
 
-                <div class="checkout-items">
+                <div class="checkout-form">
 
                     <h2 class="title" style="width: 90%; margin-left: 5%;margin-bottom: 0;">DELIVERY INFORMATION</h2>
 
                     <form action="">
                         <div class="name">
-                        <input type="text" placeholder="First Name">
-                        <input type="text" placeholder="Last Name">
-                    </div>
+                            <input type="text" placeholder="First Name">
+                            <input type="text" placeholder="Last Name">
+                        </div>
 
-                    <input type="text" placeholder="Street">
+                        <input type="text" placeholder="Street">
 
-                    <div class="name">
-                        <input type="text" placeholder="City">
-                        <input type="text" placeholder="State">
-                    </div>
+                        <div class="name">
+                            <input type="text" placeholder="City">
+                            <input type="text" placeholder="State">
+                        </div>
 
-                    <div class="name">
-                        <input type="text" placeholder="Zipcode">
-                        <input type="text" placeholder="Country">
-                    </div>
+                        <div class="name">
+                            <input type="text" placeholder="Zipcode">
+                            <input type="text" placeholder="Country">
+                        </div>
 
-                    <input type="text" placeholder="Phone">
-
-
+                        <input type="text" placeholder="Phone">
 
                     </form>
 
@@ -836,19 +834,33 @@
 
                 </div>
 
+                <div class="payment-method">
+                    <h2 class="title" style="width: 78%; margin-top: 50px;">PAYMENT METHOD</h2>
+
+                    <div class="payment-options">
+
+                        <label class="image-checkbox">
+                            <input type="checkbox" name="image1">
+                            <img src="https://via.placeholder.com/100" alt="Image 1">
+                        </label>
+                        <label class="image-checkbox">
+                            <input type="checkbox" name="image2">
+                            <img src="https://via.placeholder.com/100" alt="Image 2">
+                        </label>
+                        <label class="image-checkbox">
+                            <input type="checkbox" name="image3">
+                            <img src="https://via.placeholder.com/100" alt="Image 3">
+                        </label>
+
+                    </div>
+                </div>
+
                 <div class="checkout-btn">
                     <button>Checkout </button>
                 </div>
 
             </div>
 
-            <div class="payment-method">
-                <h2 class="title" style="width: 78%; margin-top: 50px;">CART TOTALS</h2>
-
-                <div class="payment-options">
-
-                </div>
-            </div>
 
         </div>
 
