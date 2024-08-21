@@ -623,6 +623,7 @@
                 margin: 0 auto;
                 padding: 20px;
                 border-radius: 5px;
+                row-gap: 10px;
             }
 
             .name {
@@ -633,16 +634,20 @@
             }
 
             .name input {
-                width: 48%;
+                width: 49%;
             }
 
-            input[type="text"] {
+            input {
                 width: 100%;
                 padding: 10px;
                 margin-bottom: 10px;
                 border: 1.5px solid hsl(0, 0%, 93%);
                 border-radius: 5px;
                 box-sizing: border-box;
+            }
+            
+            input::placeholder {
+                font-size: 0.75rem;
             }
 
             main {
@@ -736,7 +741,7 @@
             }
 
             .image-checkbox {
-                display: inline-block;
+                display: inline;
                 position: relative;
                 cursor: pointer;
                 margin: 10px;
