@@ -614,13 +614,13 @@
     <main>
 
         <style>
-            .login-main-container {
+            .signin-main-container {
                 display: flex;
                 justify-content: center;
                 padding: 40px 0;
             }
 
-            .login-container {
+            .signin-container {
                 width: 30%;
                 padding: 50px 0;
                 text-align: center;
@@ -631,16 +631,16 @@
                 margin: 0;
             }
 
-            .login-header {
+            .signin-header {
                 padding-bottom: 30px;
             }
 
-            .login-inputs {
+            .signin-inputs {
                 width: 100%;
                 margin-bottom: 10px;
             }
 
-            .login-inputs input {
+            .signin-inputs input {
                 margin-bottom: 10px;
                 padding: 10px;
                 border: 1px solid #eee;
@@ -649,25 +649,25 @@
                 width: 100%;
             }
 
-            .login-links {
+            .signin-links {
                 display: flex;
                 justify-content: space-between;
                 width: 100%;
                 margin-bottom: 30px;
             }
 
-            .login-links a {
+            .signin-links a {
                 text-decoration: none;
                 color: hsl(0, 0%, 13%);
                 font-size: 0.75rem;
             }
 
-            .login-button {
+            .signin-button {
                 width: 30%;
                 margin: auto;
             }
 
-            .login-button button {
+            .signin-button button {
                 width: 100%;
                 padding: 10px;
                 border: 1px solid rgba(0, 0, 0, 0.15);
@@ -678,13 +678,13 @@
                 font-weight: 600;
             }
 
-            .login-button button:hover {
+            .signin-button button:hover {
                 background-color: salmon;
             }
 
             @media (min-width: 376px) {
 
-                .login-container {
+                .signin-container {
                     width: 80%;
 
                 }
@@ -692,21 +692,21 @@
 
             @media (min-width: 768px) {
 
-                .login-container {
+                .signin-container {
                     width: 80%;
                 }
             }
 
             @media (min-width: 1024px) {
 
-                .login-container {
+                .signin-container {
                     width: 30%;
                 }
             }
 
             @media (min-width: 1395px) {
 
-                .login-container {
+                .signin-container {
                     width: 30%;
                 }
             }
@@ -714,24 +714,25 @@
 
 
 
-        <div class="login-main-container">
-            <div class="login-container">
-                <div class="login-header">
-                    <h3>Login</h3>
+        <div class="signin-main-container">
+            <div class="signin-container">
+                <div class="signin-header">
+                    <h3>Sign Up</h3>
                 </div>
 
-                <div class="login-inputs">
+                <div class="signin-inputs">
+                    <input type="text" placeholder="Name">
                     <input type="text" placeholder="Email">
                     <input type="password" placeholder="Password">
                 </div>
 
-                <div class="login-links">
+                <div class="signin-links">
                     <a href="#">Forgot your password?</a>
-                    <a href="signup.html">Create account</a>
+                    <a href="login.html">Login</a>
                 </div>
 
-                <div class="login-button">
-                    <button>Sign In</button>
+                <div class="signin-button">
+                    <button>Sign Up</button>
                 </div>
             </div>
         </div>
