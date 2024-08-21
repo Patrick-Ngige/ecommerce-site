@@ -671,7 +671,7 @@
                 background-color: hsl(0, 0%, 90%);
             }
 
-            .p-num input{
+            .p-num input {
                 border: 2px solid hsl(0, 0%, 93%);
                 padding: 5px 10px;
                 border-radius: 5px;
@@ -689,8 +689,8 @@
             .container-cart {
                 display: flex;
                 flex-direction: column;
-                margin-bottom: 30px ;
-            } 
+                margin-bottom: 30px;
+            }
 
             .total-amount {
                 width: 40%;
@@ -700,31 +700,39 @@
                 margin-left: auto;
                 padding-right: auto;
             }
+
             .amount-breakdown {
                 width: 78%;
                 display: flex;
                 flex-direction: column;
                 margin-bottom: 50px;
             }
+
             .sub-total {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 font-weight: 600;
                 padding: 10px 0;
-            } 
+            }
+
             .sub-total:not(:first-child) {
                 border-top: 1.5px solid hsl(0, 0%, 93%);
             }
-            .sub-amount, .sub-text {
+
+            .sub-amount,
+            .sub-text {
                 font-size: 0.875rem;
                 color: hsl(0, 0%, 47%);
             }
-            .total, .total-sum {
+
+            .total,
+            .total-sum {
                 font-size: 0.875rem;
-                color:hsl(0, 0%, 03%);
+                color: hsl(0, 0%, 03%);
                 font-weight: 600;
             }
+
             .checkout-btn button {
                 margin-top: 20px;
                 padding: 10px 20px;
@@ -736,6 +744,7 @@
                 border-radius: 5px;
                 font-weight: 600;
             }
+
             .checkout-btn button:hover {
                 background-color: hsl(353, 100%, 78%);
             }
@@ -855,52 +864,50 @@
 
         </div>
 
-                <div class="total-amount">
-                    <h2 class="title" style="width: 78%; margin-top: 50px;">CART TOTALS</h2>
-        
-                    <div class="amount-breakdown">
-                        <div class="sub-total">
-                            <div class="sub-text">
-                                <p>Subtotal</p>
-                            </div>
-        
-                            <div class="sub-amount">
-                                <p>Ksh. 16,100.00</p>
-                            </div>
-        
-                        </div>
+        <div class="total-amount">
+            <h2 class="title" style="width: 78%; margin-top: 50px;">CART TOTALS</h2>
 
-                        <div class="sub-total">
-                            <div class="sub-text">
-                                <p>Shipping Fee</p>
-                            </div>
-        
-                            <div class="sub-amount">
-                                <p>Ksh. 800.00</p>
-                            </div>
-        
-                        </div>
-
-                        <div class="sub-total sum">
-                            <div class="sub-text">
-                                <p class="total">Total</p>
-                            </div>
-        
-                            <div class="sub-amount">
-                                <p class="total-sum">Ksh. 16,900.00</p>
-                            </div>
-        
-                        </div>
-
-                        <div class="checkout-btn">
-                            <button>
-                                Checkout
-                            </button>
-                        </div>
-        
+            <div class="amount-breakdown">
+                <div class="sub-total">
+                    <div class="sub-text">
+                        <p>Subtotal</p>
                     </div>
-        
+
+                    <div class="sub-amount">
+                        <p>Ksh. 16,100.00</p>
+                    </div>
+
                 </div>
+
+                <div class="sub-total">
+                    <div class="sub-text">
+                        <p>Shipping Fee</p>
+                    </div>
+
+                    <div class="sub-amount">
+                        <p>Ksh. 800.00</p>
+                    </div>
+
+                </div>
+
+                <div class="sub-total sum">
+                    <div class="sub-text">
+                        <p class="total">Total</p>
+                    </div>
+
+                    <div class="sub-amount">
+                        <p class="total-sum">Ksh. 16,900.00</p>
+                    </div>
+
+                </div>
+
+                <div class="checkout-btn">
+                    <button>Checkout </button>
+                </div>
+
+            </div>
+
+        </div>
 
 
     </main>
