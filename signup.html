@@ -65,7 +65,7 @@
 
                 <div class="header-alert-news">
                     <p>
-                        Welcome to ShopIT
+                        Create an Account with Us
                     </p>
                 </div>
 
@@ -108,12 +108,7 @@
                 <div class="header-user-actions">
 
                     <button class="action-btn">
-                        <ion-icon name="person-outline"></ion-icon>
-                    </button>
-
-                    <button class="action-btn">
-                        <ion-icon name="heart-outline"></ion-icon>
-                        <span class="count">0</span>
+                        <a href="login.html"><ion-icon name="person-outline"></ion-icon></a>
                     </button>
 
                     <button class="action-btn">
@@ -654,12 +649,20 @@
                 justify-content: space-between;
                 width: 100%;
                 margin-bottom: 30px;
+                padding: 5px;
             }
 
             .signin-links a {
                 text-decoration: none;
                 color: hsl(0, 0%, 13%);
                 font-size: 0.75rem;
+            }
+
+            .signin-links a:hover {
+                color: salmon;
+                font-size: 0.85rem;
+                transition: ease-in-out;
+                font-weight: 500;
             }
 
             .signin-button {
