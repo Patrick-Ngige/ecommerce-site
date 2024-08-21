@@ -613,31 +613,93 @@
 
     <main>
 
-        <div style="width: 70%; display: flex; flex-direction: column; align-items: center; align-content: center; left: 0; top: 0; margin: auto; padding: 50px 0;">
-            <div style="padding-bottom: 30px;">
+        <style>
+
+.login-main-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.login-container {
+    width: 30%;
+    padding: 50px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.login-header {
+    padding-bottom: 30px;
+}
+
+.login-inputs {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.login-inputs input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+}
+
+.login-links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.login-links a {
+    text-decoration: none;
+    color: hsl(0, 0%, 13%);
+    font-size: 0.75rem;
+}
+
+.login-button {
+    width: 30%;
+    margin: auto;
+}
+
+.login-button button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    background-color: #222;
+    color: white;
+    font-weight: 600;
+}
+
+        </style>
+<div class="login-main-container">
+<div class="login-container">
+            <div class="login-header">
                 <h3>Login</h3>
             </div>
-
-            <div style=" width: 100%;margin-bottom: 10px; ">
-                <input type="text" placeholder="Email" style="margin-bottom: 10px;border: 1px solid hsl(0, 0%, 93%);padding: 10px; border-radius: 10px; box-shadow:  0 5px 20px hsla(0, 0%, 0%, 0.15);">
-                <input type="password" placeholder="Password"  style="margin-bottom: 10px;border: 1px solid hsl(0, 0%, 93%);padding: 10px; border-radius: 10px; box-shadow:  0 5px 20px hsla(0, 0%, 0%, 0.15);">
+    
+            <div class="login-inputs">
+                <input type="text" placeholder="Email">
+                <input type="password" placeholder="Password">
             </div>
-
-            <div style="display: flex; flex-direction: row; align-items: flex-start;">
-                <div>
-                    <a href="#">Forgot your password?</a>
-                </div>
-                
-                <div>
-                    <a href="register.html">Create account</a>
-                </div>
+    
+            <div class="login-links">
+                <a href="#">Forgot your password?</a>
+                <a href="register.html">Create account</a>
             </div>
-
-            <div>
+    
+            <div class="login-button">
                 <button>Sign In</button>
             </div>
         </div>
-
+    </div>
 
     </main>
 
