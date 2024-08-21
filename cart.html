@@ -800,6 +800,31 @@
                 margin-left: auto;
                 padding-right: auto;
             }
+            .amount-breakdown {
+                width: 78%;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 50px;
+            }
+            .sub-total {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                font-weight: 600;
+                padding: 10px 0;
+            } 
+            .sub-total:not(:first-child) {
+                border-top: 1.5px solid hsl(0, 0%, 93%);
+            }
+            .sub-amount, .sub-text {
+                font-size: 0.875rem;
+                color: hsl(0, 0%, 47%);
+            }
+            .total, .total-sum {
+                font-size: 0.875rem;
+                color:hsl(0, 0%, 03%);
+                font-weight: 600;
+            }
         </style>
 
         <div class="product-container" style="margin-top: 20px;">
@@ -917,9 +942,9 @@
         </div>
 
                 <div class="total-amount">
-                    <h2 class="title" style="width: 78%; margin-left: 5%;margin-bottom: 0;">CART TOTALS</h2>
+                    <h2 class="title" style="width: 78%; margin-top: 50px;">CART TOTALS</h2>
         
-                    <div class="amount-brakdown">
+                    <div class="amount-breakdown">
                         <div class="sub-total">
                             <div class="sub-text">
                                 <p>Subtotal</p>
@@ -927,6 +952,28 @@
         
                             <div class="sub-amount">
                                 <p>Ksh. 16,100.00</p>
+                            </div>
+        
+                        </div>
+
+                        <div class="sub-total">
+                            <div class="sub-text">
+                                <p>Shipping Fee</p>
+                            </div>
+        
+                            <div class="sub-amount">
+                                <p>Ksh. 800.00</p>
+                            </div>
+        
+                        </div>
+
+                        <div class="sub-total sum">
+                            <div class="sub-text">
+                                <p class="total">Total</p>
+                            </div>
+        
+                            <div class="sub-amount">
+                                <p class="total-sum">Ksh. 16,900.00</p>
                             </div>
         
                         </div>
