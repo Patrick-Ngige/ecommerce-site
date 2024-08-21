@@ -754,6 +754,10 @@
                 color: hsl(0, 0%, 13%);
             }
 
+            .p-info {
+                margin-bottom: 10px;
+            }
+
             .p-price {
                 display: flex;
                 flex-direction: row;
@@ -767,18 +771,19 @@
 
             .p-size {
                 border: 1px solid hsl(0, 0%, 93%);
-                padding: 10px;
+                padding: 5px 8px;
                 border-radius: 5px;
                 background-color: hsl(0, 0%, 90%);
             }
 
-            .p-num {
+            .p-num input{
                 border: 2px solid hsl(0, 0%, 93%);
                 padding: 5px 10px;
                 border-radius: 5px;
-                width: 5%;
+                width: 85%;
                 font-size: 0.75rem;
                 font-weight: 500;
+                text-align: center;
             }
 
             .delete-icon {
@@ -825,6 +830,20 @@
                 color:hsl(0, 0%, 03%);
                 font-weight: 600;
             }
+            .checkout-btn button {
+                margin-top: 20px;
+                padding: 10px 20px;
+                color: white;
+                background-color: hsl(0, 0%, 03%);
+                margin-left: auto;
+                font-size: 0.875rem;
+                border: none;
+                border-radius: 5px;
+                font-weight: 600;
+            }
+            .checkout-btn button:hover {
+                background-color: hsl(353, 100%, 78%);
+            }
         </style>
 
         <div class="product-container" style="margin-top: 20px;">
@@ -861,7 +880,7 @@
                         </div>
 
                         <div class="p-num">
-                            2
+                            <input type="number" value="2" min="0" max="100" step="1">
                         </div>
 
                         <div class="delete-icon">
@@ -893,7 +912,7 @@
                         </div>
 
                         <div class="p-num">
-                            2
+                            <input type="number" value="2" min="0" max="100" step="1">
                         </div>
 
                         <div class="delete-icon">
@@ -925,7 +944,7 @@
                         </div>
 
                         <div class="p-num">
-                            2
+                            <input type="number" value="2" min="0" max="100" step="1">
                         </div>
 
                         <div class="delete-icon">
@@ -976,6 +995,12 @@
                                 <p class="total-sum">Ksh. 16,900.00</p>
                             </div>
         
+                        </div>
+
+                        <div class="checkout-btn">
+                            <button>
+                                Checkout
+                            </button>
                         </div>
         
                     </div>
