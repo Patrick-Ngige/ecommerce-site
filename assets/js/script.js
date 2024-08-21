@@ -104,4 +104,44 @@ document.addEventListener('DOMContentLoaded', () => {
     productSizeBtns.forEach(btn => {
         btn.addEventListener('click', sizeBtn);
     });
+
+
+
+    /* ==================
+            CART PAGE
+    =================  */
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const productContainers = document.querySelectorAll('.main-container');
+        const subtotalElement = document.getElementById('subtotal');
+    
+        function updateSubtotal() {
+            let subtotal = 0;
+            productContainers.forEach(container => {
+                const priceElement = container.querySelector('.p-price p');
+                const quantityElement = container.querySelector('.p-num input');
+                const price = parseFloat(priceElement.textContent.replace('Ksh. ', '').replace(',', ''));
+                const quantity = parseInt(quantityElement.value);
+                subtotal += price * quantity;
+            });
+            subtotalElement.textContent = `Ksh. ${subtotal.toFixed(2)}`;
+        }
+    
+        productContainers.forEach(container => {
+            const quantityElement = container.querySelector('.p-num input');
+            const deleteIcon = container.querySelector('.delete-icon ion-icon');
+    
+            quantityElement.addEventListener('change', updateSubtotal);
+            deleteIcon.addEventListener('click', function() {
+                container.remove();
+                updateSubtotal();
+            });
+        });
+    
+        updateSubtotal(); // Initial calculation
+    });
+    
+
 });
+
+
