@@ -780,14 +780,54 @@
             .btn-add-cart {
                 background-color: hsl(0, 0%, 13%);
                 color: hsl(0, 0%, 100%);
-                border-radius: 5px;
-                padding: 8px 10px;
+                border-radius: 3px;
+                padding: 8px 15px;
                 font-size: 0.875rem;
                 font-weight: 600;
             }
             .btn-add-cart:hover {
                 background-color: hsl(353, 100%, 78%);
             }
+            .p-contain {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+            }
+            .product-views {
+                width: 15%;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                align-content: center;
+                align-items: center;
+                padding-top: 40px;
+            }
+            .showcase-banner {
+                width: 85%;
+            }
+            .image-checkbox {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                cursor: pointer;
+            }
+
+            .image-checkbox input[type="checkbox"] {
+                display: none;
+            }
+
+            .image-checkbox img {
+                width: 70px;
+                height: 70px;
+                border: 2px solid hsl(0, 0%, 93%);
+                margin-left: 7px;
+                padding: 5px;
+            }
+
+            .image-checkbox input[type="checkbox"]:checked+img {
+                border: 2px solid hsl(353, 100%, 78%);
+            }
+
         </style>
 
 
@@ -811,14 +851,37 @@
                     <div class="product-featured">
                          <div class="showcase-wrapper has-scrollbar">
 
-                            <div class="showcase-container">
+                            <!-- <div class="showcase-container"> -->
 
-                                <div class="showcase">
+                                <div class="showcase product">
+                                    <div class="p-contain">
 
-                                    <div class="showcase-banner">
-                                        <img src="./assets/images/products/shampoo.jpg"
-                                            alt="shampoo, conditioner & facewash packs" class="showcase-img">
+                                        <div class="product-views">
+                                            <label class="image-checkbox">
+                                                <input type="checkbox" name="image1">
+                                                <img src="./assets/images/products/clothes-1.jpg" alt="M-Pesa">
+                                            </label>
+                                            <label class="image-checkbox">
+                                                <input type="checkbox" name="image1">
+                                                <img src="./assets/images/products/clothes-2.jpg" alt="M-Pesa">
+                                            </label>
+                                            <label class="image-checkbox">
+                                                <input type="checkbox" name="image1">
+                                                <img src="./assets/images/products/clothes-3.jpg" alt="M-Pesa">
+                                            </label>
+                                            <label class="image-checkbox">
+                                                <input type="checkbox" name="image1">
+                                                <img src="./assets/images/products/clothes-4.jpg" alt="M-Pesa">
+                                            </label>
+                                        </div>
+    
+                                        <div class="showcase-banner">
+                                            <img src="./assets/images/products/clothes-1.jpg"
+                                                alt="shampoo, conditioner & facewash packs" class="showcase-img">
+                                        </div>
+
                                     </div>
+                                   
 
                                     <div class="showcase-content">
 
@@ -926,12 +989,14 @@
 
             <div class="container">
 
+                <h2 class="title" >Related Products</h2>
+
                 <div class="blog-container has-scrollbar">
 
                     <div class="blog-card">
 
                         <a href="#">
-                            <img src="./assets/images/blog-1.jpg" alt="Clothes Retail KPIs 2021 Guide for Clothes Executives" width="300" class="blog-banner">
+                            <img src="./assets/images/products/jacket-1.jpg" alt="Clothes Retail KPIs 2021 Guide for Clothes Executives" width="300" class="blog-banner">
                         </a>
 
                         <div class="blog-content">
@@ -939,11 +1004,11 @@
                             <a href="#" class="blog-category">Fashion</a>
 
                             <a href="#">
-                                <h3 class="blog-title">Clothes Retail KPIs 2021 Guide for Clothes Executives</h3>
+                                <h3 class="blog-title">Jacket</h3>
                             </a>
 
                             <p class="blog-meta">
-                                By <cite>Patrick</cite> / <time datetime="2024-08-12">August 12, 2024</time>
+                                By <cite>Kshs 4,500.00</cite>
                             </p>
 
                         </div>
@@ -955,12 +1020,12 @@
                     <div class="blog-card">
 
                         <a href="#">
-                            <img src="./assets/images/blog-2.jpg" alt="Curbside Fashion Trends: How to Win the Pickup Battle" width="300" class="blog-banner">
+                            <img src="./assets/images/products/clothes-2.jpg" alt="Curbside Fashion Trends: How to Win the Pickup Battle" width="300" class="blog-banner">
                         </a>
 
                         <div class="blog-content">
 
-                            <a href="#" class="blog-category">Clothes</a>
+                            <a href="#" class="blog-category">Women's round Neck Sweater</a>
 
                             <a href="#">
                                 <h3 class="blog-title">Curbside Fashion Trends: How to Win the Pickup Battle</h3>
@@ -979,7 +1044,7 @@
                     <div class="blog-card">
 
                         <a href="#">
-                            <img src="./assets/images/blog-3.jpg" alt="EBT Vendors: Claim Your Share of SNAP Online Revenue" width="300" class="blog-banner">
+                            <img src="./assets/images/products/clothes-4.jpg" alt="EBT Vendors: Claim Your Share of SNAP Online Revenue" width="300" class="blog-banner">
                         </a>
 
                         <div class="blog-content">
@@ -1003,7 +1068,7 @@
                     <div class="blog-card">
 
                         <a href="#">
-                            <img src="./assets/images/blog-4.jpg" alt="Curbside Fashion Trend: How to Win the Pickup Battle" width="300" class="blog-banner">
+                            <img src="./assets/images/products/jacket-3.jpg" alt="Curbside Fashion Trend: How to Win the Pickup Battle" width="300" class="blog-banner">
                         </a>
 
                         <div class="blog-content">
@@ -1036,84 +1101,6 @@
         ================= -->
 
         <footer>
-
-            <div class="footer-category">
-
-                <div class="container">
-
-                    <h2 class="footer-category-title">Brand Directory</h2>
-
-                    <div class="footer-category-box">
-
-                        <h3 class="category-box-title">Fashion: </h3>
-
-                        <a href="#" class="footer-category-link">T-shirt</a>
-                        <a href="#" class="footer-category-link">Shirt</a>
-                        <a href="#" class="footer-category-link">Shorts & Jeans</a>
-                        <a href="#" class="footer-category-link">Dress & Frock</a>
-                        <a href="#" class="footer-category-link">Innerwear</a>
-                        <a href="#" class="footer-category-link">Hosiery</a>
-
-                    </div>
-
-                    <div class="footer-category-box">
-
-                        <h3 class="category-box-title">Footwear: </h3>
-
-                        <a href="#" class="footer-category-link">sport</a>
-                        <a href="#" class="footer-category-link">formal</a>
-                        <a href="#" class="footer-category-link">Boots</a>
-                        <a href="#" class="footer-category-link">Casual</a>
-                        <a href="#" class="footer-category-link">Cowboy Shoes</a>
-                        <a href="#" class="footer-category-link">Safety Shoes</a>
-                        <a href="#" class="footer-category-link">Party Wear Shoes</a>
-                        <a href="#" class="footer-category-link">Branded</a>
-                        <a href="#" class="footer-category-link">Firstcopy</a>
-                        <a href="#" class="footer-category-link">Long Shoes</a>
-
-                    </div>
-
-                    <div class="footer-category-box">
-
-                        <h3 class="category-box-title">Jewellery: </h3>
-
-                        <a href="#" class="footer-category-link">Necklace</a>
-                        <a href="#" class="footer-category-link">Earrings</a>
-                        <a href="#" class="footer-category-link">Couple Rings</a>
-                        <a href="#" class="footer-category-link">Pendants</a>
-                        <a href="#" class="footer-category-link">Crystal</a>
-                        <a href="#" class="footer-category-link">Bangles</a>
-                        <a href="#" class="footer-category-link">Bracelets</a>
-                        <a href="#" class="footer-category-link">Nosepin</a>
-                        <a href="#" class="footer-category-link">Chain</a>
-                        <a href="#" class="footer-category-link">Couple Rings</a>
-
-                    </div>
-
-                    <div class="footer-category-box">
-
-                        <h3 class="category-box-title">Cosmetics: </h3>
-
-                        <a href="#" class="footer-category-link">Shampoo</a>
-                        <a href="#" class="footer-category-link">Bodywash</a>
-                        <a href="#" class="footer-category-link">Facewash</a>
-                        <a href="#" class="footer-category-link">Makeup Kit</a>
-                        <a href="#" class="footer-category-link">Liner</a>
-                        <a href="#" class="footer-category-link">Lipstick</a>
-                        <a href="#" class="footer-category-link">Perfume</a>
-                        <a href="#" class="footer-category-link">Body Wash</a>
-                        <a href="#" class="footer-category-link">Scrub</a>
-                        <a href="#" class="footer-category-link">Hair Gel</a>
-                        <a href="#" class="footer-category-link">Hair Colors</a>
-                        <a href="#" class="footer-category-link">Hair Dye</a>
-                        <a href="#" class="footer-category-link">Sunscreen</a>
-                        <a href="#" class="footer-category-link">Skin Lotion</a>
-
-                    </div>
-
-                </div>
-
-            </div>
 
             <div class="footer-nav">
 
