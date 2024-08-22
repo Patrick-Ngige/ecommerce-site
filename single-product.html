@@ -741,6 +741,55 @@
     </header>
 
 
+        <style>
+            .product-sizes {
+                font-size: 0.875rem;
+                font-weight: 600;
+                color: hsl(0, 0%, 47%);
+                margin-bottom: 10px;
+            }
+            .payment-options {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+                     
+            .p-size-checkbox {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                cursor: pointer;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            }
+
+            .p-size-checkbox input[type="checkbox"] {
+                display: none;
+            }
+
+            .p-size-checkbox p {
+                border: 1.5px solid hsl(0, 0%, 93%);
+                margin-left: 20px;
+                padding: 10px;
+            }
+
+            .p-size-checkbox input[type="checkbox"]:checked+p {
+                border: 2px solid hsl(353, 100%, 78%);
+            }
+            .btn-add-cart {
+                background-color: hsl(0, 0%, 13%);
+                color: hsl(0, 0%, 100%);
+                border-radius: 5px;
+                padding: 8px 10px;
+                font-size: 0.875rem;
+                font-weight: 600;
+            }
+            .btn-add-cart:hover {
+                background-color: hsl(353, 100%, 78%);
+            }
+        </style>
+
 
     <!-- ==================
             MAIN
@@ -773,6 +822,10 @@
 
                                     <div class="showcase-content">
 
+                                        <a href="#">
+                                            <h3 class="showcase-title">Shampoo, Conditioner & Facewash Packs</h3>
+                                        </a>
+
                                         <div class="showcase-rating">
                                             <ion-icon name="star"></ion-icon>
                                             <ion-icon name="star"></ion-icon>
@@ -780,10 +833,6 @@
                                             <ion-icon name="star-outline"></ion-icon>
                                             <ion-icon name="star-outline"></ion-icon>
                                         </div>
-
-                                        <a href="#">
-                                            <h3 class="showcase-title">Shampoo, Conditioner & Facewash Packs</h3>
-                                        </a>
 
                                         <p class="showcase-desc">
                                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum nam ipsam
@@ -798,8 +847,6 @@
                                             <del>Ksh. 25,999.00</del>
 
                                         </div>
-
-                                        <button class="add-cart-btn">Add to cart</button>
 
                                         <div class="showcase-status">
 
@@ -818,79 +865,39 @@
                                             <div class="showcase-status-bar"></div>
                                         </div>
 
-                                                   
-                                        <div class="countdown-box" style="margin-bottom: 20px;">
+                                        <div class="product-sizes">
 
                                             <p class="countdown-desc">
-                                                
+                                               Select Size(s):
                                             </p>
 
-                                            <div class="countdown">
-
-                                                <div class="countdown-content">
-
-                                                    <img src="./assets/images/products/1.jpg" width="50" height="50"  class="display-number"></img>
-
-                                                </div>
-
-                                                <div class="countdown-content">
-
-                                                    <img src="./assets/images/products/2.jpg" width="50" height="50"  class="display-number"></img>
-
-                                                </div>
-
-                                                <div class="countdown-content">
-
-                                                    <img src="./assets/images/products/3.jpg" width="50" height="50"  class="display-number"></img>
-
-                                                </div>
-
-                                                <div class="countdown-content">
-
-                                                    <img src="./assets/images/products/4.jpg" width="50" height="50" class="display-number"></img>
-
-                                                </div>
-
+                                            <div class="payment-options">
+                        
+                                                <label class="p-size-checkbox">
+                                                    <input type="checkbox" name="image1">
+                                                   <p> SM </p>
+                                                </label>
+                                                <label class="p-size-checkbox">
+                                                    <input type="checkbox" name="image2">
+                                                    <p> M </p>
+                                                </label>
+                                                <label class="p-size-checkbox">
+                                                    <input type="checkbox" name="image3">
+                                                    <p> L </p>
+                                                </label>
+                                                <label class="p-size-checkbox">
+                                                    <input type="checkbox" name="image3">
+                                                    <p> XL</p>
+                                                </label>
+                                                <label class="p-size-checkbox">
+                                                    <input type="checkbox" name="image3">
+                                                    <p> XXL </p>
+                                                </label>
+                        
                                             </div>
-
+                                            
                                         </div>
-
-                                        <div class="countdown-box">
-
-                                            <p class="countdown-desc">
-                                                Sizes
-                                            </p>
-
-                                            <div class="countdown">
-
-                                                <div class="countdown-content product-size" >
-
-                                                   <p class="display-number">SM</p> 
-
-                                                </div>
-
-                                                <div class="countdown-content product-size" product-size >
-
-                                                    <p class="display-number">L</p> 
-
-                                                </div>
-
-                                                <div class="countdown-content product-size" product-size >
-
-                                                    <p class="display-number">XL</p> 
-
-                                                </div>
-
-                                                <div class="countdown-content product-size" product-size >
-
-                                                 <p class="display-number">XXL</p> 
-
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-                             
+                                        <button class="btn-add-cart">Add to cart</button>
 
                                     </div>
 
