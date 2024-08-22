@@ -629,25 +629,32 @@
                 width: 90%;
                 display: flex;
                 flex-direction: row;
-                justify-content: space-between;
                 align-items: center;
                 align-content: center;
                 border-bottom: 2px solid hsl(0, 0%, 93%);
                 padding: 10px 0;
                 margin-left: 5%;
                 margin-bottom: 30px;
+                gap: 5%;
+            }
+
+            .p-container {
+                display: flex;
+                flex-direction: row;
+                width: 50%;
             }
 
             .product-img {
                 border: 1px solid hsl(0, 0%, 93%);
                 border-radius: 5px;
-
             }
 
             .product-info {
                 font-size: 0.875rem;
                 font-weight: 600;
                 color: hsl(0, 0%, 13%);
+                width: 50%;
+                margin-left: 0;
             }
 
             .p-info {
@@ -658,7 +665,7 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                width: 80%;
+                width: 100%;
                 align-items: center;
                 align-content: center;
                 color: hsl(0, 0%, 47%);
@@ -672,83 +679,28 @@
                 background-color: hsl(0, 0%, 90%);
             }
 
-            .p-num input {
-                border: 2px solid hsl(0, 0%, 93%);
-                padding: 5px 10px;
-                border-radius: 5px;
-                width: 85%;
-                font-size: 0.75rem;
-                font-weight: 500;
-                text-align: center;
+            .p-num {
+                width: 30%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
             }
 
             .delete-icon {
+                width: 20%;
                 cursor: pointer;
                 padding-right: 30px;
             }
-
-            .container-orders {
-                display: flex;
-                flex-direction: column;
-                margin-bottom: 30px;
+            .order-status {
+                width: 10px;
+                height: 10px;
+                background-color: aqua;
+                border-radius: 50%;
             }
 
-            .total-amount {
-                width: 40%;
-                display: flex;
-                flex-direction: column;
-                align-content: end;
-                margin-left: auto;
-                padding-right: auto;
-            }
 
-            .amount-breakdown {
-                width: 78%;
-                display: flex;
-                flex-direction: column;
-                margin-bottom: 50px;
-            }
-
-            .sub-total {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                font-weight: 600;
-                padding: 10px 0;
-            }
-
-            .sub-total:not(:first-child) {
-                border-top: 1.5px solid hsl(0, 0%, 93%);
-            }
-
-            .sub-amount,
-            .sub-text {
-                font-size: 0.875rem;
-                color: hsl(0, 0%, 47%);
-            }
-
-            .total,
-            .total-sum {
-                font-size: 0.875rem;
-                color: hsl(0, 0%, 03%);
-                font-weight: 600;
-            }
-
-            .checkout-btn button {
-                margin-top: 20px;
-                padding: 10px 20px;
-                color: white;
-                background-color: hsl(0, 0%, 03%);
-                margin-left: auto;
-                font-size: 0.875rem;
-                border: none;
-                border-radius: 5px;
-                font-weight: 600;
-            }
-
-            .checkout-btn button:hover {
-                background-color: hsl(353, 100%, 78%);
-            }
         </style>
 
         <div class="product-container" style="margin-top: 20px;">
@@ -763,29 +715,53 @@
                     <h2 class="title" style="width: 90%; margin-left: 5%;margin-bottom: 0;">YOUR <span style="color: hsl(353, 100%, 78%);"> ORDERS</span></h2>
 
                     <div class="main-container">
-                        <div class="product-img">
-                            <img src="./assets/images/products/clothes-1.jpg" width="100" height="100" alt="">
-                        </div>
 
-                        <div class="product-info">
+                        <div class="p-container">
 
-                            <div class="p-info">
-                                <p>Women Round Neck Sweater</p>
+                            <div class="product-img">
+                                <img src="./assets/images/products/clothes-1.jpg" width="100" height="100" alt="">
                             </div>
-
-                            <div class="p-price">
-                                <p>Ksh. 2,000.00</p>
-
-                                <div class="p-size">
-                                    M
+    
+                            <div class="product-info">
+    
+                                <div class="p-info">
+                                    <p>Women Round Neck Sweater</p>
                                 </div>
-
+    
+                                <div class="p-price">
+                                    <p>Ksh. 2,000.00</p>
+    
+                                    <div class="p-quantity">
+                                        Quantity: 1
+                                    </div>
+    
+                                    <div class="prd-size">
+                                        Size: M 
+                                    </div>
+    
+                                </div>
+    
+                                <div class="date">
+                                    Date: <span style="color: hsl(0, 0%, 47%);"> Thur 22nd Aug,2024 </span>
+                                </div>
+    
+                                <div class="payment">
+                                    Payment: <span style="color: hsl(0, 0%, 47%);"> POD </span>
+                                </div>
+    
                             </div>
 
                         </div>
+                        
 
                         <div class="p-num">
-                            <input type="number" value="2" min="0" max="100" step="1">
+                            <div class="order-status">
+
+                            </div>
+
+                            <div class="order-status-text">
+                                <p>Order Placed</p>
+                            </div>
                         </div>
 
                         <div class="delete-icon">
