@@ -618,54 +618,15 @@
     ================== -->
 
         <style>
-            form {
-                width: 100%;
-                margin: 0 auto;
-                padding: 20px;
-                border-radius: 5px;
-                row-gap: 10px;
-            }
-
-            .name {
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                margin-bottom: 10px;
-            }
-
-            .name input {
-                width: 49%;
-            }
-
-            input {
-                width: 100%;
-                padding: 10px;
-                margin-bottom: 10px;
-                border: 1.5px solid hsl(0, 0%, 93%);
-                border-radius: 5px;
-                box-sizing: border-box;
-            }
-
-            input::placeholder {
-                font-size: 0.75rem;
-            }
-
-            main {
-                width: 100%;
-                display: flex;
-                flex-direction: row;
-                row-gap: 20px;
-                padding: 10px 20px;
-            }
-
-            .checkout-form {
+            .cart-items {
                 display: flex;
                 flex-direction: column;
                 width: 100%;
+                padding: 0px 20px;
             }
 
             .main-container {
-                width: 100%;
+                width: 90%;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -674,17 +635,65 @@
                 border-bottom: 2px solid hsl(0, 0%, 93%);
                 padding: 10px 0;
                 margin-left: 5%;
-                padding-left: 20px;
             }
 
-            .container-checkout {
+            .product-img {
+                border: 1px solid hsl(0, 0%, 93%);
+                border-radius: 5px;
+
+            }
+
+            .product-info {
+                font-size: 0.875rem;
+                font-weight: 600;
+                color: hsl(0, 0%, 13%);
+            }
+
+            .p-info {
+                margin-bottom: 10px;
+            }
+
+            .p-price {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 80%;
+                align-items: center;
+                align-content: center;
+                color: hsl(0, 0%, 47%);
+                font-weight: 600;
+            }
+
+            .p-size {
+                border: 1px solid hsl(0, 0%, 93%);
+                padding: 5px 8px;
+                border-radius: 5px;
+                background-color: hsl(0, 0%, 90%);
+            }
+
+            .p-num input {
+                border: 2px solid hsl(0, 0%, 93%);
+                padding: 5px 10px;
+                border-radius: 5px;
+                width: 85%;
+                font-size: 0.75rem;
+                font-weight: 500;
+                text-align: center;
+            }
+
+            .delete-icon {
+                cursor: pointer;
+                padding-right: 30px;
+            }
+
+            .container-cart {
                 display: flex;
                 flex-direction: column;
                 margin-bottom: 30px;
             }
 
             .total-amount {
-                width: 45%;
+                width: 40%;
                 display: flex;
                 flex-direction: column;
                 align-content: end;
@@ -739,74 +748,114 @@
             .checkout-btn button:hover {
                 background-color: hsl(353, 100%, 78%);
             }
-
-            .payment-options {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                flex-wrap: wrap;
-            }
-            .payment-method p {
-                font-size: 0.875rem;
-                font-weight: 600;
-                color: hsl(0, 0%, 47%);
-                margin-bottom: 10px;
-            }
-            .image-checkbox {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                cursor: pointer;
-            }
-
-            .image-checkbox input[type="checkbox"] {
-                display: none;
-            }
-
-            .image-checkbox img {
-                width: 75px;
-                height: 50px;
-                border: 1.5px solid hsl(0, 0%, 93%);
-                margin-left: 7px;
-                padding: 5px;
-            }
-
-            .image-checkbox input[type="checkbox"]:checked+img {
-                border: 2px solid hsl(353, 100%, 78%);
-            }
         </style>
 
-        <div class="checkout-container" style="margin-top: 20px;">
-            <div class="container-checkout">
+        <div class="product-container" style="margin-top: 20px;">
+            <div class="container-cart">
 
                 <!-- =====================
                     PRODUCT LIST 
             ====================== -->
 
-                <div class="checkout-form">
+                <div class="cart-items">
 
-                    <h2 class="title" style="width: 90%; margin-left: 5%;margin-bottom: 0;">DELIVERY INFORMATION</h2>
+                    <h2 class="title" style="width: 90%; margin-left: 5%;margin-bottom: 0;">YOUR CART</h2>
 
-                    <form action="">
-                        <div class="name">
-                            <input type="text" placeholder="First Name">
-                            <input type="text" placeholder="Last Name">
+                    <div class="main-container">
+                        <div class="product-img">
+                            <img src="./assets/images/products/clothes-1.jpg" width="100" height="100" alt="">
                         </div>
 
-                        <input type="text" placeholder="Street">
+                        <div class="product-info">
 
-                        <div class="name">
-                            <input type="text" placeholder="City">
-                            <input type="text" placeholder="State">
+                            <div class="p-info">
+                                <p>Women Round Neck Sweater</p>
+                            </div>
+
+                            <div class="p-price">
+                                <p>Ksh. 2,000.00</p>
+
+                                <div class="p-size">
+                                    M
+                                </div>
+
+                            </div>
+
                         </div>
 
-                        <div class="name">
-                            <input type="text" placeholder="Zipcode">
-                            <input type="text" placeholder="Country">
+                        <div class="p-num">
+                            <input type="number" value="2" min="0" max="100" step="1">
                         </div>
 
-                        <input type="text" placeholder="Phone">
-                    </form>
+                        <div class="delete-icon">
+                            <ion-icon name="trash-outline"></ion-icon>
+                        </div>
+
+                    </div>
+
+                    <div class="main-container">
+                        <div class="product-img">
+                            <img src="./assets/images/products/clothes-1.jpg" width="100" height="100" alt="">
+                        </div>
+
+                        <div class="product-info">
+
+                            <div class="p-info">
+                                <p>Women Round Neck Sweater</p>
+                            </div>
+
+                            <div class="p-price">
+                                <p>Ksh. 2,000.00</p>
+
+                                <div class="p-size">
+                                    M
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="p-num">
+                            <input type="number" value="2" min="0" max="100" step="1">
+                        </div>
+
+                        <div class="delete-icon">
+                            <ion-icon name="trash-outline"></ion-icon>
+                        </div>
+
+                    </div>
+
+                    <div class="main-container">
+                        <div class="product-img">
+                            <img src="./assets/images/products/clothes-1.jpg" width="100" height="100" alt="">
+                        </div>
+
+                        <div class="product-info">
+
+                            <div class="p-info">
+                                <p>Women Round Neck Sweater</p>
+                            </div>
+
+                            <div class="p-price">
+                                <p>Ksh. 2,000.00</p>
+
+                                <div class="p-size">
+                                    M
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="p-num">
+                            <input type="number" value="2" min="0" max="100" step="1">
+                        </div>
+
+                        <div class="delete-icon">
+                            <ion-icon name="trash-outline"></ion-icon>
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -815,7 +864,7 @@
 
         </div>
 
-        <div class="total-amount">
+        <!-- <div class="total-amount">
             <h2 class="title" style="width: 78%; margin-top: 50px;">CART TOTALS</h2>
 
             <div class="amount-breakdown">
@@ -852,47 +901,13 @@
 
                 </div>
 
-                <div class="payment-method">
-                    <h2 class="title" style="width: 100%; margin-top: 50px;">PAYMENT METHOD</h2>
-
-            <!-- <h2 class="title" style="width: 78%; margin-top: 50px;">CART TOTALS</h2> -->
-                    <p>Select One:</p>
-
-
-                    <div class="payment-options">
-
-                        <label class="image-checkbox">
-                            <input type="checkbox" name="image1">
-                            <img src="./assets/images/payment methods/m-pesa.jpeg" alt="M-Pesa">
-                        </label>
-                        <label class="image-checkbox">
-                            <input type="checkbox" name="image2">
-                            <img src="./assets/images/payment methods/paypal.jpeg" alt="Paypal">
-                        </label>
-                        <label class="image-checkbox">
-                            <input type="checkbox" name="image3">
-                            <img src="./assets/images/payment methods/mastercad.jpeg" alt="Mastercard">
-                        </label>
-                        <label class="image-checkbox">
-                            <input type="checkbox" name="image3">
-                            <img src="./assets/images/payment methods/visa.jpeg" alt="Visa">
-                        </label>
-                        <label class="image-checkbox">
-                            <input type="checkbox" name="image3">
-                            <img src="./assets/images/payment methods/airtel-money.jpeg" alt="Airtel Money">
-                        </label>
-
-                    </div>
-                </div>
-
                 <div class="checkout-btn">
-                    <a href="orders.html"><button>Place Order </button></a>
+                    <a href="checkout.html"><button>Checkout</button></a>
                 </div>
 
             </div>
 
-
-        </div>
+        </div> -->
 
 
     </main>
