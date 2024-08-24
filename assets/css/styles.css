@@ -194,9 +194,7 @@
  /* === Modal subsection === */
 
  .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: fixed;    
     width: 100%;
     height: 100vh;
     background: hsla(0, 0%, 0%, 0.5);
@@ -229,9 +227,10 @@
  }
 
  .modal-close-overlay {
+   display: flex;
+   justify-content: center;
+   align-items: center;
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100vh;
     z-index: 1;
@@ -249,7 +248,7 @@
     border-radius: var(--border-radius-md);
     overflow: hidden;
     z-index: 2;
-    /* animation: scaleUp 0.5s ease-in-out 5s forwards; */
+    animation: scaleUp 0.5s ease-in-out 5s forwards;
  }
 
  @keyframes scaleUp {
