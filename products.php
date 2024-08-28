@@ -654,7 +654,7 @@
     ================== -->
 
     <main>
-<!-- ==================
+        <!-- ==================
             PRODUCT
     ================== -->
 
@@ -1208,32 +1208,26 @@
 
 
 
-                    <!-- =====================
+                <!-- =====================
                     PRODUCT GRID
             ====================== -->
 
-            <?php
-require 'vendor/autoload.php'; // Include the Guzzle library
+                <?php
+                require 'vendor/autoload.php';
 
-use GuzzleHttp\Client;
+                use GuzzleHttp\Client;
 
-$apiEndpoint = 'https://fakestoreapi.com/products/';
+                $apiEndpoint = 'https://fakestoreapi.com/products/';
 
-$client = new Client();
+                $client = new Client();
 
-try {
-    $response = $client->request('GET', $apiEndpoint);
-    $data = json_decode($response->getBody(), true);
+                try {
+                    $response = $client->request('GET', $apiEndpoint);
+                    $data = json_decode($response->getBody(), true);
 
-    // Set the maximum number of products to display
-    $maxProducts = 16; // Change this to your desired limit
-
-    // Use a for loop to iterate through the products
-   
-// } catch (Exception $e) {
-//     echo "Error fetching products: " . $e->getMessage();
-// }
-?>
+                    // maximum number of products to display
+                    $maxProducts = 16;
+                    ?>
 
                     <div class="product-main">
 
@@ -1243,85 +1237,88 @@ try {
 
                             <?php for ($i = 0; $i < min($maxProducts, count($data)); $i++) { ?>
 
-                            <div class="showcase">     
+                                <div class="showcase">
 
-                                <div class="showcase-banner">
+                                    <div class="showcase-banner">
 
-                                    <img src="<?php echo $data[$i]['image'] ?>" alt="Men's Winter Leather Jackets" width="300" height="300" class="product-img default">
+                                        <img src="<?php echo $data[$i]['image'] ?>" alt="Men's Winter Leather Jackets"
+                                            width="300" height="300" class="product-img default">
 
-                                    <img src="<?php echo $data[$i]['image'] ?>" alt="Men's Winter Leather Jackets" width="300" height="300" class="product-img hover">
+                                        <img src="<?php echo $data[$i]['image'] ?>" alt="Men's Winter Leather Jackets"
+                                            width="300" height="300" class="product-img hover">
 
-                                    <p class="showcase-badge">15%</p>
+                                        <p class="showcase-badge">15%</p>
 
-                                    <div class="showcase-actions">
+                                        <div class="showcase-actions">
 
-                                        <button class="btn-action">
-                                            <ion-icon name="heart-outline"></ion-icon>
-                                        </button>
+                                            <button class="btn-action">
+                                                <ion-icon name="heart-outline"></ion-icon>
+                                            </button>
 
-                                        <button class="btn-action">
-                                            <ion-icon name="eye-outline"></ion-icon>
-                                        </button>
+                                            <button class="btn-action">
+                                                <ion-icon name="eye-outline"></ion-icon>
+                                            </button>
 
-                                        <button class="btn-action">
-                                            <ion-icon name="repeat-outline"></ion-icon>
-                                        </button>
+                                            <button class="btn-action">
+                                                <ion-icon name="repeat-outline"></ion-icon>
+                                            </button>
 
-                                        <button class="btn-action">
-                                            <ion-icon name="bag-add-outline"><ionicon>
-                                        </button> 
+                                            <button class="btn-action">
+                                                <ion-icon name="bag-add-outline">
+                                                    <ionicon>
+                                            </button>
 
-                                </div>
+                                        </div>
 
-                                </div>
-
-                                <div class="showcase-content">
-
-                                    <a href="#" class="showcase-category"> <?php echo $data[$i]['category'] ?></a>
-
-                                    <a href="#">
-                                        <h3 class="showcase-title"> <?php echo $data[$i]['title']; ?> 
-                                        <!-- Men's Winter Leather Jackets -->
-                                    </h3>
-                                    </a>
-
-                                    <div class="showcase-rating">
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star-outline"></ion-icon>
-                                        <ion-icon name="star-outline"></ion-icon>
                                     </div>
 
-                                    <div class="price-box">
-                                        <p class="price">$<?php echo $data[$i]['price']; ?>
-                                            <!-- Ksh. 6,240.00 -->
-                                        </p>
-                                        <del>Ksh. 8,060.00</del>
-                                    </div>              
+                                    <div class="showcase-content">
+
+                                        <a href="#" class="showcase-category"> <?php echo $data[$i]['category'] ?></a>
+
+                                        <a href="#">
+                                            <h3 class="showcase-title"> <?php echo $data[$i]['title']; ?>
+                                                <!-- Men's Winter Leather Jackets -->
+                                            </h3>
+                                        </a>
+
+                                        <div class="showcase-rating">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star-outline"></ion-icon>
+                                            <ion-icon name="star-outline"></ion-icon>
+                                        </div>
+
+                                        <div class="price-box">
+                                            <p class="price">$<?php echo $data[$i]['price']; ?>
+                                                <!-- Ksh. 6,240.00 -->
+                                            </p>
+                                            <del>Ksh. 8,060.00</del>
+                                        </div>
+
+                                    </div>
 
                                 </div>
 
-                            </div>
-
-                            <?php } ?> 
+                            <?php } ?>
 
                         </div>
 
                     </div>
 
                     <?php
-} catch (Exception $e) {
-    echo "Error fetching products: " . $e->getMessage();
-}
-?>
-
-                </div>
+                } catch (Exception $e) {
+                    echo "Error fetching products: " . $e->getMessage();
+                }
+                ?>
 
             </div>
 
         </div>
-         <!-- ===================
+
+        </div>
+        <!-- ===================
                    BLOGS
             ================= -->
 
@@ -1334,7 +1331,9 @@ try {
                     <div class="blog-card">
 
                         <a href="#">
-                            <img src="./assets/images/blog-1.jpg" alt="Clothes Retail KPIs 2021 Guide for Clothes Executives" width="300" class="blog-banner">
+                            <img src="./assets/images/blog-1.jpg"
+                                alt="Clothes Retail KPIs 2021 Guide for Clothes Executives" width="300"
+                                class="blog-banner">
                         </a>
 
                         <div class="blog-content">
@@ -1351,14 +1350,16 @@ try {
 
                         </div>
 
-                       
+
 
                     </div>
 
                     <div class="blog-card">
 
                         <a href="#">
-                            <img src="./assets/images/blog-2.jpg" alt="Curbside Fashion Trends: How to Win the Pickup Battle" width="300" class="blog-banner">
+                            <img src="./assets/images/blog-2.jpg"
+                                alt="Curbside Fashion Trends: How to Win the Pickup Battle" width="300"
+                                class="blog-banner">
                         </a>
 
                         <div class="blog-content">
@@ -1375,14 +1376,16 @@ try {
 
                         </div>
 
-                       
+
 
                     </div>
 
                     <div class="blog-card">
 
                         <a href="#">
-                            <img src="./assets/images/blog-3.jpg" alt="EBT Vendors: Claim Your Share of SNAP Online Revenue" width="300" class="blog-banner">
+                            <img src="./assets/images/blog-3.jpg"
+                                alt="EBT Vendors: Claim Your Share of SNAP Online Revenue" width="300"
+                                class="blog-banner">
                         </a>
 
                         <div class="blog-content">
@@ -1399,14 +1402,16 @@ try {
 
                         </div>
 
-                       
+
 
                     </div>
 
                     <div class="blog-card">
 
                         <a href="#">
-                            <img src="./assets/images/blog-4.jpg" alt="Curbside Fashion Trend: How to Win the Pickup Battle" width="300" class="blog-banner">
+                            <img src="./assets/images/blog-4.jpg"
+                                alt="Curbside Fashion Trend: How to Win the Pickup Battle" width="300"
+                                class="blog-banner">
                         </a>
 
                         <div class="blog-content">
@@ -1434,306 +1439,306 @@ try {
     </main>
 
 
-        <!-- =================
+    <!-- =================
                 Footer
         ================= -->
 
-        <footer>
+    <footer>
 
-            <div class="footer-category">
+        <div class="footer-category">
 
-                <div class="container">
+            <div class="container">
 
-                    <h2 class="footer-category-title">Brand Directory</h2>
+                <h2 class="footer-category-title">Brand Directory</h2>
 
-                    <div class="footer-category-box">
+                <div class="footer-category-box">
 
-                        <h3 class="category-box-title">Fashion: </h3>
+                    <h3 class="category-box-title">Fashion: </h3>
 
-                        <a href="#" class="footer-category-link">T-shirt</a>
-                        <a href="#" class="footer-category-link">Shirt</a>
-                        <a href="#" class="footer-category-link">Shorts & Jeans</a>
-                        <a href="#" class="footer-category-link">Dress & Frock</a>
-                        <a href="#" class="footer-category-link">Innerwear</a>
-                        <a href="#" class="footer-category-link">Hosiery</a>
+                    <a href="#" class="footer-category-link">T-shirt</a>
+                    <a href="#" class="footer-category-link">Shirt</a>
+                    <a href="#" class="footer-category-link">Shorts & Jeans</a>
+                    <a href="#" class="footer-category-link">Dress & Frock</a>
+                    <a href="#" class="footer-category-link">Innerwear</a>
+                    <a href="#" class="footer-category-link">Hosiery</a>
 
-                    </div>
+                </div>
 
-                    <div class="footer-category-box">
+                <div class="footer-category-box">
 
-                        <h3 class="category-box-title">Footwear: </h3>
+                    <h3 class="category-box-title">Footwear: </h3>
 
-                        <a href="#" class="footer-category-link">sport</a>
-                        <a href="#" class="footer-category-link">formal</a>
-                        <a href="#" class="footer-category-link">Boots</a>
-                        <a href="#" class="footer-category-link">Casual</a>
-                        <a href="#" class="footer-category-link">Cowboy Shoes</a>
-                        <a href="#" class="footer-category-link">Safety Shoes</a>
-                        <a href="#" class="footer-category-link">Party Wear Shoes</a>
-                        <a href="#" class="footer-category-link">Branded</a>
-                        <a href="#" class="footer-category-link">Firstcopy</a>
-                        <a href="#" class="footer-category-link">Long Shoes</a>
+                    <a href="#" class="footer-category-link">sport</a>
+                    <a href="#" class="footer-category-link">formal</a>
+                    <a href="#" class="footer-category-link">Boots</a>
+                    <a href="#" class="footer-category-link">Casual</a>
+                    <a href="#" class="footer-category-link">Cowboy Shoes</a>
+                    <a href="#" class="footer-category-link">Safety Shoes</a>
+                    <a href="#" class="footer-category-link">Party Wear Shoes</a>
+                    <a href="#" class="footer-category-link">Branded</a>
+                    <a href="#" class="footer-category-link">Firstcopy</a>
+                    <a href="#" class="footer-category-link">Long Shoes</a>
 
-                    </div>
+                </div>
 
-                    <div class="footer-category-box">
+                <div class="footer-category-box">
 
-                        <h3 class="category-box-title">Jewellery: </h3>
+                    <h3 class="category-box-title">Jewellery: </h3>
 
-                        <a href="#" class="footer-category-link">Necklace</a>
-                        <a href="#" class="footer-category-link">Earrings</a>
-                        <a href="#" class="footer-category-link">Couple Rings</a>
-                        <a href="#" class="footer-category-link">Pendants</a>
-                        <a href="#" class="footer-category-link">Crystal</a>
-                        <a href="#" class="footer-category-link">Bangles</a>
-                        <a href="#" class="footer-category-link">Bracelets</a>
-                        <a href="#" class="footer-category-link">Nosepin</a>
-                        <a href="#" class="footer-category-link">Chain</a>
-                        <a href="#" class="footer-category-link">Couple Rings</a>
+                    <a href="#" class="footer-category-link">Necklace</a>
+                    <a href="#" class="footer-category-link">Earrings</a>
+                    <a href="#" class="footer-category-link">Couple Rings</a>
+                    <a href="#" class="footer-category-link">Pendants</a>
+                    <a href="#" class="footer-category-link">Crystal</a>
+                    <a href="#" class="footer-category-link">Bangles</a>
+                    <a href="#" class="footer-category-link">Bracelets</a>
+                    <a href="#" class="footer-category-link">Nosepin</a>
+                    <a href="#" class="footer-category-link">Chain</a>
+                    <a href="#" class="footer-category-link">Couple Rings</a>
 
-                    </div>
+                </div>
 
-                    <div class="footer-category-box">
+                <div class="footer-category-box">
 
-                        <h3 class="category-box-title">Cosmetics: </h3>
+                    <h3 class="category-box-title">Cosmetics: </h3>
 
-                        <a href="#" class="footer-category-link">Shampoo</a>
-                        <a href="#" class="footer-category-link">Bodywash</a>
-                        <a href="#" class="footer-category-link">Facewash</a>
-                        <a href="#" class="footer-category-link">Makeup Kit</a>
-                        <a href="#" class="footer-category-link">Liner</a>
-                        <a href="#" class="footer-category-link">Lipstick</a>
-                        <a href="#" class="footer-category-link">Perfume</a>
-                        <a href="#" class="footer-category-link">Body Wash</a>
-                        <a href="#" class="footer-category-link">Scrub</a>
-                        <a href="#" class="footer-category-link">Hair Gel</a>
-                        <a href="#" class="footer-category-link">Hair Colors</a>
-                        <a href="#" class="footer-category-link">Hair Dye</a>
-                        <a href="#" class="footer-category-link">Sunscreen</a>
-                        <a href="#" class="footer-category-link">Skin Lotion</a>
-
-                    </div>
+                    <a href="#" class="footer-category-link">Shampoo</a>
+                    <a href="#" class="footer-category-link">Bodywash</a>
+                    <a href="#" class="footer-category-link">Facewash</a>
+                    <a href="#" class="footer-category-link">Makeup Kit</a>
+                    <a href="#" class="footer-category-link">Liner</a>
+                    <a href="#" class="footer-category-link">Lipstick</a>
+                    <a href="#" class="footer-category-link">Perfume</a>
+                    <a href="#" class="footer-category-link">Body Wash</a>
+                    <a href="#" class="footer-category-link">Scrub</a>
+                    <a href="#" class="footer-category-link">Hair Gel</a>
+                    <a href="#" class="footer-category-link">Hair Colors</a>
+                    <a href="#" class="footer-category-link">Hair Dye</a>
+                    <a href="#" class="footer-category-link">Sunscreen</a>
+                    <a href="#" class="footer-category-link">Skin Lotion</a>
 
                 </div>
 
             </div>
 
-            <div class="footer-nav">
+        </div>
 
-                <div class="container">
+        <div class="footer-nav">
 
-                    <ul class="footer-nav-list">
+            <div class="container">
 
-                        <li class="footer-nav-item">
-                            <h2 class="nav-title">Popular Categories</h2>
-                        </li>
+                <ul class="footer-nav-list">
 
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Fashion</a>
-                        </li>
+                    <li class="footer-nav-item">
+                        <h2 class="nav-title">Popular Categories</h2>
+                    </li>
 
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Electronics</a>
-                        </li>
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Fashion</a>
+                    </li>
 
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Cosmetic</a>
-                        </li>
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Electronics</a>
+                    </li>
 
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Health</a>
-                        </li>
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Cosmetic</a>
+                    </li>
 
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Watches</a>
-                        </li>
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Health</a>
+                    </li>
 
-                    </ul>
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Watches</a>
+                    </li>
 
-                    <ul class="footer-nav-list">
+                </ul>
 
-                        <li class="footer-nav-item">
-                            <h2 class="nav-title">Products</h2>
-                        </li>
+                <ul class="footer-nav-list">
 
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Price Drop</a>
-                        </li>
+                    <li class="footer-nav-item">
+                        <h2 class="nav-title">Products</h2>
+                    </li>
 
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">New Products</a>
-                        </li>
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Price Drop</a>
+                    </li>
 
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Best Sales</a>
-                        </li>
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">New Products</a>
+                    </li>
 
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Contact Us</a>
-                        </li>
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Best Sales</a>
+                    </li>
 
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Sitemap</a>
-                        </li>
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Contact Us</a>
+                    </li>
 
-                    </ul>
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Sitemap</a>
+                    </li>
 
-                    <ul class="footer-nav-list">
+                </ul>
 
-                        <li class="footer-nav-item">
-                            <h2 class="nav-title">Our Company</h2>
-                        </li>
+                <ul class="footer-nav-list">
 
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Delivery</a>
-                        </li>
+                    <li class="footer-nav-item">
+                        <h2 class="nav-title">Our Company</h2>
+                    </li>
 
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Legal Notice</a>
-                        </li>
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Delivery</a>
+                    </li>
 
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Terms and Conditions</a>
-                        </li>
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Legal Notice</a>
+                    </li>
 
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">About Us</a>
-                        </li>
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Terms and Conditions</a>
+                    </li>
 
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Secure Payment</a>
-                        </li>
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">About Us</a>
+                    </li>
 
-                    </ul>
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Secure Payment</a>
+                    </li>
 
-                    <ul class="footer-nav-list">
+                </ul>
 
-                        <li class="footer-nav-item">
-                            <h2 class="nav-title">Services</h2>
-                        </li>
+                <ul class="footer-nav-list">
 
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Price Drop</a>
-                        </li>
+                    <li class="footer-nav-item">
+                        <h2 class="nav-title">Services</h2>
+                    </li>
 
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">New Products</a>
-                        </li>
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Price Drop</a>
+                    </li>
 
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Best Sales</a>
-                        </li>
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">New Products</a>
+                    </li>
 
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Contact Us</a>
-                        </li>
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Best Sales</a>
+                    </li>
 
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Sitemap</a>
-                        </li>
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Contact Us</a>
+                    </li>
 
-                    </ul>
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Sitemap</a>
+                    </li>
 
-                    <ul class="footer-nav-list">
+                </ul>
 
-                        <li class="footer-nav-item">
-                            <h2 class="nav-title">Contact</h2>
-                        </li>
+                <ul class="footer-nav-list">
 
-                        <li class="footer-nav-item flex">
+                    <li class="footer-nav-item">
+                        <h2 class="nav-title">Contact</h2>
+                    </li>
 
-                            <div class="icon-box">
-                                <ion-icon name="location-outline"></ion-icon>
-                            </div>
+                    <li class="footer-nav-item flex">
 
-                            <address class="content">
-                                Room D35 Dubai Mecharnt,
-                                Ronald Ngala Avenue, Nairobi, Kenya
-                            </address>
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
 
-                        </li>
+                        <address class="content">
+                            Room D35 Dubai Mecharnt,
+                            Ronald Ngala Avenue, Nairobi, Kenya
+                        </address>
 
-                        <li class="footer-nav-item flex">
+                    </li>
 
-                            <div class="icon-box">
-                                <ion-icon name="call-outline"></ion-icon>
-                            </div>
+                    <li class="footer-nav-item flex">
 
-                            <a href="tel:+254700155251" class="footer-nav-link"> +254 700 155 251</a>
+                        <div class="icon-box">
+                            <ion-icon name="call-outline"></ion-icon>
+                        </div>
 
-                        </li>
- 
-                        <li class="footer-nav-item flex">
+                        <a href="tel:+254700155251" class="footer-nav-link"> +254 700 155 251</a>
 
-                            <div class="icon-box">
-                                <ion-icon name="mail-outline"></ion-icon>
-                            </div>
+                    </li>
 
-                            <a href="mailto:shopify@yahoo.com" class="footer-nav-link">shopify@yahoo.com</a>
+                    <li class="footer-nav-item flex">
 
-                        </li>
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
 
-                    </ul>
+                        <a href="mailto:shopify@yahoo.com" class="footer-nav-link">shopify@yahoo.com</a>
 
-                    <ul class="footer-nav-list">
+                    </li>
 
-                        <li class="footer-nav-item">
-                            <h2 class="nav-title">Follow Us</h2>
-                        </li>
+                </ul>
 
-                        <li>
+                <ul class="footer-nav-list">
 
-                            <ul class="social-link">
+                    <li class="footer-nav-item">
+                        <h2 class="nav-title">Follow Us</h2>
+                    </li>
 
-                                <li class="footer-nav-item">
-                                    <a href="#" class="footer-nav-link">
-                                        <ion-icon name="logo-facebook"></ion-icon>
-                                    </a>
-                                </li>
+                    <li>
 
-                                <li class="footer-nav-item">
-                                    <a href="#" class="footer-nav-link">
-                                        <ion-icon name="logo-twitter"></ion-icon>
-                                    </a>
-                                </li>
+                        <ul class="social-link">
 
-                                <li class="footer-nav-item">
-                                    <a href="#" class="footer-nav-link">
-                                        <ion-icon name="logo-linkedin"></ion-icon>
-                                    </a>
-                                </li>
+                            <li class="footer-nav-item">
+                                <a href="#" class="footer-nav-link">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </li>
 
-                                <li class="footer-nav-item">
-                                    <a href="#" class="footer-nav-link">
-                                        <ion-icon name="logo-instagram"></ion-icon>
-                                    </a>
-                                </li>
+                            <li class="footer-nav-item">
+                                <a href="#" class="footer-nav-link">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                            </li>
 
-                            </ul>
+                            <li class="footer-nav-item">
+                                <a href="#" class="footer-nav-link">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                            </li>
 
-                        </li>
+                            <li class="footer-nav-item">
+                                <a href="#" class="footer-nav-link">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                            </li>
 
-                    </ul>
+                        </ul>
 
-                </div>
+                    </li>
+
+                </ul>
 
             </div>
 
-            <div class="footer-bottom">
+        </div>
 
-                <div class="container">
+        <div class="footer-bottom">
 
-                    <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+            <div class="container">
 
-                    <p class="copyright">
-                        Copyright &copy; <a href="#">Shopify</a> all rights reserved.
-                    </p>
-                    
-                </div>
+                <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+
+                <p class="copyright">
+                    Copyright &copy; <a href="#">Shopify</a> all rights reserved.
+                </p>
 
             </div>
 
-        </footer>
+        </div>
+
+    </footer>
 
 
 
