@@ -21,16 +21,7 @@
 
 <body>
 
-
-
-
-
-
-
-
-
     <div class="overlay" data-overlay></div>
-
 
     <!-- ==================
             NOTIFICATION TOAST
@@ -175,12 +166,12 @@
 
                     <!-- menu categories  -->
                     <li class="menu-category">
-                        <a href="#" class="menu-title">Home</a>
+                        <a href="/" class="menu-title">Home</a>
                     </li>
 
                     <!-- menu categories  -->
                     <li class="menu-category">
-                        <a href="#" class="menu-title">Categories</a>
+                        <a href="products.php" class="menu-title">Categories</a>
 
                         <!-- dropdown panel s -->
                         <div class="dropdown-panel">
@@ -334,18 +325,16 @@
 
                     <!--Blogs menu categories  -->
                     <li class="menu-category">
-                        <a href="index.html#blogs" class="menu-title">Blogs</a>
+                        <a href="index.php#blogs" class="menu-title">Blogs</a>
                     </li>
 
                     <li class="menu-category">
-                        <a href="about-us.html" class="menu-title">About Us</a>
+                        <a href="about-us.php" class="menu-title">About Us</a>
                     </li>
 
                     <li class="menu-category">
-                        <a href="contact-us.html" class="menu-title">Contact Us</a>
+                        <a href="contact-us.php" class="menu-title">Contact Us</a>
                     </li>
-
-
 
                 </ul>
 
