@@ -1169,7 +1169,7 @@
                                         <img src="<?php echo $data[$i]['image'] ?>" alt="<?php echo $data[$i]['title']; ?>"
                                             width="300" height="300" class="product-img hover">
 
-                                        <p class="showcase-badge">15%</p>
+                                        <p class="showcase-badge"><?php echo $data[$i]['rating']['rate']; ?></p>
 
                                         <div class="showcase-actions">
 
@@ -1215,7 +1215,7 @@
                                             <p class="price">$<?php echo $data[$i]['price']; ?>
                                                 <!-- Ksh. 6,240.00 -->
                                             </p>
-                                            <del><?php echo $data[$i]['rating']['rate']; ?></del>
+                                            <del></del>
                                         </div>
 
                                     </div>
