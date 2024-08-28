@@ -659,6 +659,23 @@
 
                     // maximum number of products to display
                     $maxProducts = 16;
+
+                    $uniqueProductsByCategory = [];
+
+                    foreach ($data as $product) {
+                        $category = $product['category'];
+                        $rating = $product['rating'];
+                
+                        // Only add the product if it's not already in the array and has a rating > 4.5
+                        if (!isset($uniqueProductsByCategory[$category]) && $rating > 4.5) {
+                            $uniqueProductsByCategory[$category] = $product;
+                        }
+                    }
+                
+                    // Set the maximum number of products to display
+                    // $maxProducts = count($uniqueProductsByCategory);
+    
+
                     ?>
         <!-- ==================
             PRODUCT
@@ -1069,9 +1086,6 @@
 
                             </li>
 
-
-
-
                         </ul>
 
                     </div>
@@ -1084,17 +1098,19 @@
 
                             <div class="showcase-container">
 
+                                 <?php foreach ($uniqueProductsByCategory as $product) { ?>
+
                                 <div class="showcase">
 
                                     <a href="#" class="showcase-img-box">
-                                        <img src="./assets/images/products/1.jpg" alt="baby fabric shoes" width="75"
+                                        <img src="<?php echo $product['image'] ?>" alt="<?php echo $product['title'] ?>" width="75"
                                             height="75" class="showcase-img">
                                     </a>
 
                                     <div class="showcase-content">
 
                                         <a href="#">
-                                            <h4 class="showcase-title">Baby Fabric Shoes</h4>
+                                            <h4 class="showcase-title"><?php echo $product['title'] ?></h4>
                                         </a>
 
                                         <div class="showcase-rating">
@@ -1102,111 +1118,26 @@
                                             <ion-icon name="star"></ion-icon>
                                             <ion-icon name="star"></ion-icon>
                                             <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star-outline"></ion-icon>
                                         </div>
 
                                         <div class="price-box">
                                             <del>Ksh. 650.00</del>
-                                            <p class="price">Ksh. 520.00</p>
+                                            <p class="price">$<?php echo $product['price'] ?></p>
                                         </div>
 
                                     </div>
 
                                 </div>
 
-                                <div class="showcase">
 
-                                    <a href="#" class="showcase-img-box">
-                                        <img src="./assets/images/products/2.jpg" alt="men hoodies t-shirt" width="75"
-                                            height="75" class="showcase-img">
-                                    </a>
-
-                                    <div class="showcase-content">
-
-                                        <a href="#">
-                                            <h4 class="showcase-title">Men's hoodies t-shirt</h4>
-                                        </a>
-
-                                        <div class="showcase-rating">
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                        </div>
-
-                                        <div class="price-box">
-                                            <del>Ksh. 2,000.00</del>
-                                            <p class="price">Ksh. 1,499.00</p>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                <div class="showcase">
-
-                                    <a href="#" class="showcase-img-box">
-                                        <img src="./assets/images/products/3.jpg" alt="girls t-shirt" width="75"
-                                            height="75" class="showcase-img">
-                                    </a>
-
-                                    <div class="showcase-content">
-
-                                        <a href="#">
-                                            <h4 class="showcase-title">Girls t-shirt</h4>
-                                        </a>
-
-                                        <div class="showcase-rating">
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                        </div>
-
-                                        <div class="price-box">
-                                            <del>Ksh. 520.00</del>
-                                            <p class="price">Ksh. 390.00</p>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                <div class="showcase">
-
-                                    <a href="#" class="showcase-img-box">
-                                        <img src="./assets/images/products/4.jpg" alt="men woolen hat" width="75"
-                                            height="75" class="showcase-img">
-                                    </a>
-
-                                    <div class="showcase-content">
-
-                                        <a href="#">
-                                            <h4 class="showcase-title">Woolen hat for men</h4>
-                                        </a>
-
-                                        <div class="showcase-rating">
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                        </div>
-
-                                        <div class="price-box">
-                                            <del>Ksh. 1,950.00</del>
-                                            <p class="price">Ksh. 1,560.00</p>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
+                                <?php } ?>
                             </div>
 
+                            
                         </div>
+
+                        
 
                     </div>
 
