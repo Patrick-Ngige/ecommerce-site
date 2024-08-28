@@ -21,6 +21,39 @@
 
 <body>
 
+<?php
+require 'vendor/autoload.php'; // Include the Guzzle library
+
+use GuzzleHttp\Client;
+
+$apiEndpoint = 'https://fakestoreapi.com/products/category/men\'s%20clothing';
+
+$client = new Client();
+
+try {
+    $response = $client->request('GET', $apiEndpoint);
+    $data = json_decode($response->getBody(), true);
+
+    // Set the maximum number of products to display
+    $maxProducts = 5; // Change this to your desired limit
+
+    // Use a for loop to iterate through the products
+    for ($i = 0; $i < min($maxProducts, count($data)); $i++) {
+        $product = $data[$i];
+        echo "Product Name: {$product['title']}\n";
+        echo "Price: {$product['price']}\n";
+        echo "Description: {$product['description']}\n\n";
+    }
+} catch (Exception $e) {
+    echo "Error fetching products: " . $e->getMessage();
+}
+?>
+
+
+
+
+
+
 
     <div class="overlay" data-overlay></div>
 
