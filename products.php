@@ -1316,6 +1316,7 @@
 
         </div>
 
+
         </div>
         <!-- ===================
                    BLOGS
@@ -1349,8 +1350,6 @@
 
                         </div>
 
-
-
                     </div>
 
                     <div class="blog-card">
@@ -1375,8 +1374,6 @@
 
                         </div>
 
-
-
                     </div>
 
                     <div class="blog-card">
@@ -1400,8 +1397,6 @@
                             </p>
 
                         </div>
-
-
 
                     </div>
 
