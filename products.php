@@ -643,6 +643,23 @@
     ================== -->
 
     <main>
+
+    <?php
+                require 'vendor/autoload.php';
+
+                use GuzzleHttp\Client;
+
+                $apiEndpoint = 'https://fakestoreapi.com/products/';
+
+                $client = new Client();
+
+                try {
+                    $response = $client->request('GET', $apiEndpoint);
+                    $data = json_decode($response->getBody(), true);
+
+                    // maximum number of products to display
+                    $maxProducts = 16;
+                    ?>
         <!-- ==================
             PRODUCT
     ================== -->
@@ -1201,22 +1218,7 @@
                     PRODUCT GRID
             ====================== -->
 
-                <?php
-                require 'vendor/autoload.php';
-
-                use GuzzleHttp\Client;
-
-                $apiEndpoint = 'https://fakestoreapi.com/products/';
-
-                $client = new Client();
-
-                try {
-                    $response = $client->request('GET', $apiEndpoint);
-                    $data = json_decode($response->getBody(), true);
-
-                    // maximum number of products to display
-                    $maxProducts = 16;
-                    ?>
+               
 
                     <div class="product-main">
 
@@ -1282,24 +1284,18 @@
                                             <p class="price">$<?php echo $data[$i]['price']; ?>
                                                 <!-- Ksh. 6,240.00 -->
                                             </p>
-                                            <del>Ksh. 8,060.00</del>
+                                            <del><?php echo $data[$i]['rating']['rate']; ?></del>
                                         </div>
 
                                     </div>
 
                                 </div>
 
-                            <?php } ?>
+                                <?php } ?>
 
                         </div>
 
                     </div>
-
-                    <?php
-                } catch (Exception $e) {
-                    echo "Error fetching products: " . $e->getMessage();
-                }
-                ?>
 
             </div>
 
@@ -1731,6 +1727,15 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 
     <script nonmodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    
+
+    <?php
+                } catch (Exception $e) {
+                    echo "Error fetching products: " . $e->getMessage();
+                }
+                ?>
+
 
 </body>
 
