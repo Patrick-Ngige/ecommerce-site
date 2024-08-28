@@ -21,6 +21,11 @@
 
 <body>
 
+    <!-- #    PHP CODE
+    #    accessing db using fakestore api -->
+
+    
+
 
     <div class="overlay" data-overlay></div>
 
