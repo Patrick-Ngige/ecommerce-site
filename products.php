@@ -664,7 +664,7 @@
 
                     foreach ($data as $product) {
                         $category = $product['category'];
-                        $rating = $product['rating'];
+                        $rating = $product['rating']['rate'];
                 
                         // Only add the product if it's not already in the array and has a rating > 4.5
                         if (!isset($uniqueProductsByCategory[$category]) && $rating > 4.5) {
