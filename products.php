@@ -1241,10 +1241,10 @@
 
                                     <div class="showcase-banner">
 
-                                        <img src="<?php echo $data[$i]['image'] ?>" alt="Men's Winter Leather Jackets"
+                                        <img src="<?php echo $data[$i]['image'] ?>" alt="<?php echo $data[$i]['title']; ?>"
                                             width="300" height="300" class="product-img default">
 
-                                        <img src="<?php echo $data[$i]['image'] ?>" alt="Men's Winter Leather Jackets"
+                                        <img src="<?php echo $data[$i]['image'] ?>" alt="<?php echo $data[$i]['title']; ?>"
                                             width="300" height="300" class="product-img hover">
 
                                         <p class="showcase-badge">15%</p>
@@ -1278,7 +1278,6 @@
 
                                         <a href="#">
                                             <h3 class="showcase-title"> <?php echo $data[$i]['title']; ?>
-                                                <!-- Men's Winter Leather Jackets -->
                                             </h3>
                                         </a>
 
