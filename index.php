@@ -194,7 +194,7 @@
                     </button>
 
                     <button class="action-btn">
-                        <a href="cart.html"><ion-icon name="bag-handle-outline"></ion-icon></a>
+                        <a href="cart.php"><ion-icon name="bag-handle-outline"></ion-icon></a>
                         <span class="count">0</span>
                     </button>
 
@@ -213,12 +213,12 @@
 
                     <!-- menu categories  -->
                     <li class="menu-category">
-                        <a href="#" class="menu-title">Home</a>
+                        <a href="/" class="menu-title">Home</a>
                     </li>
 
                     <!-- menu categories  -->
                     <li class="menu-category">
-                        <a href="products.html" class="menu-title">Categories</a>
+                        <a href="products.php" class="menu-title">Categories</a>
 
                         <!-- dropdown panel s -->
                         <div class="dropdown-panel">
@@ -504,7 +504,7 @@
             </button>
 
             <button class="action-btn">
-                <a href="cart.html"><ion-icon name="bag-handle-outline"></ion-icon></a>
+                <a href="cart.php"><ion-icon name="bag-handle-outline"></ion-icon></a>
                 <span class="count">0</span>
             </button>
 

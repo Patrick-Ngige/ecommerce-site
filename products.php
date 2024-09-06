@@ -147,7 +147,7 @@
                     </button>
 
                     <button class="action-btn">
-                        <a href="cart.html"><ion-icon name="bag-handle-outline"></ion-icon></a>
+                        <a href="cart.php"><ion-icon name="bag-handle-outline"></ion-icon></a>
                         <span class="count">0</span>
                     </button>
 
@@ -350,7 +350,7 @@
             </button>
 
             <button class="action-btn">
-                <a href="cart.html"><ion-icon name="bag-handle-outline"></ion-icon></a>
+                <a href="cart.php"><ion-icon name="bag-handle-outline"></ion-icon></a>
                 <span class="count">0</span>
             </button>
 
