@@ -140,11 +140,11 @@
                 <div class="header-user-actions">
 
                     <button class="action-btn">
-                        <a href="login.html"><ion-icon name="person-outline"></ion-icon></a>
+                        <a href="login.php"><ion-icon name="person-outline"></ion-icon></a>
                     </button>
 
                     <button class="action-btn">
-                        <a href="cart.html"><ion-icon name="bag-handle-outline"></ion-icon></a>
+                        <a href="cart.php"><ion-icon name="bag-handle-outline"></ion-icon></a>
                         <span class="count">0</span>
                     </button>
 
@@ -168,7 +168,7 @@
 
                     <!-- menu categories  -->
                     <li class="menu-category">
-                        <a href="products.html" class="menu-title">Categories</a>
+                        <a href="products.php" class="menu-title">Categories</a>
 
                         <!-- dropdown panel s -->
                         <div class="dropdown-panel">
@@ -431,11 +431,11 @@
 
                     <!--Blogs menu categories  -->
                     <li class="menu-category">
-                        <a href="http://127.0.0.1:5500/index.html#blogs" class="menu-title">Blogs</a>
+                        <a href="http://127.0.0.1:5500/index.php#blogs" class="menu-title">Blogs</a>
                     </li>
 
                     <li class="menu-category">
-                        <a href="http://127.0.0.1:5500/index.html#hot-offers" class="menu-title">Hot Offers</a>
+                        <a href="http://127.0.0.1:5500/index.php#hot-offers" class="menu-title">Hot Offers</a>
                     </li>
 
 
@@ -454,7 +454,7 @@
             </button>
 
             <button class="action-btn">
-                <a href="cart.html"><ion-icon name="bag-handle-outline"></ion-icon></a>
+                <a href="cart.php"><ion-icon name="bag-handle-outline"></ion-icon></a>
                 <span class="count">0</span>
             </button>
 
