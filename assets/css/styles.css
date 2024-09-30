@@ -1773,6 +1773,14 @@ footer {
 
 /* LARGER THAN 480PX */
 
+@media (max-width: 768px) {
+   .product-grid .product-img {
+      width: auto;
+      padding: 0px;
+      margin: auto;
+  }
+}
+
 @media (min-width: 480px) {
 
    /* CUSTOM PROPERTY */
