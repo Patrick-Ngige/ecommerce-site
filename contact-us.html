@@ -21,6 +21,21 @@
 
 <body>
 
+    <style>
+        @media (max-width: 768px) {
+            .showcase-container.contact {
+                width: 100%;
+                padding: unset;
+            }
+            .socials-icons ul{
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                color: hsl(0, 0%, 47%);
+            }
+        }
+    </style>
+
 
     <div class="overlay" data-overlay></div>
 
@@ -95,10 +110,10 @@
 
                 <!-- search container  -->
 
-                <div class="header-search-container" >
-                    <input type="search" name="search" class="search-field"  placeholder="Enter your product name... ">
+                <div class="header-search-container">
+                    <input type="search" name="search" class="search-field" placeholder="Enter your product name... ">
 
-                    <button class="search-btn" >
+                    <button class="search-btn">
                         <ion-icon name="search-outline"></ion-icon>
                     </button>
                 </div>
@@ -615,7 +630,7 @@
         <div class="product-container" style="margin-top: 10px;">
             <h2 class="title" style="width: 90%; margin-left: 5%;">CONTACT US</h2>
             <div class="container">
-                
+
 
                 <!-- =====================
                     PRODUCT FEATURED
@@ -624,7 +639,7 @@
                 <div class="product-featured">
                     <div class="showcase-wrapper has-scrollbar">
 
-                        <div class="showcase-container" style="border: none;">
+                        <div class="showcase-container contact" style="border: none;">
 
                             <div class="showcase">
 
@@ -636,7 +651,7 @@
                                 <div class="showcase-content">
 
                                     <h3 class="showcase-title" style="text-transform: capitalize;">Our Store</h3>
-                                        <br>
+                                    <br>
                                     <p class="showcase-desc">
                                         Room D35 Dubai Mecharnt, <br>
                                         Ronald Ngala Avenue, Nairobi, Kenya
@@ -652,42 +667,43 @@
 
                                     <h3 class="showcase-title" style="text-transform: capitalize;">Our Team</h3>
 
-                                     <p class="showcase-desc">
-                                        Our dedicated support team is always ready to assist you with any questions or concerns.
+                                    <p class="showcase-desc">
+                                        Our dedicated support team is always ready to assist you with any questions or
+                                        concerns.
                                     </p>
 
                                     <br>
 
                                     <h3 class="showcase-title" style="text-transform: capitalize;">Our Socials</h3> <br>
-                                    <div style="display: flex; gap: 10px;">
-                                    <ul class="header-social-container">
+                                    <div class="socials-icons" style="display: flex; gap: 10px;">
+                                        <ul class="header-social-container">
 
-                                        <li>
-                                            <a href="#" class="social-link">
-                                                <ion-icon name="logo-facebook"></ion-icon>
-                                            </a>
-                                        </li>
-                    
-                                        <li>
-                                            <a href="#" class="social-link">
-                                                <ion-icon name="logo-twitter"></ion-icon>
-                                            </a>
-                                        </li>
-                    
-                                        <li>
-                                            <a href="#" class="social-link">
-                                                <ion-icon name="logo-instagram"></ion-icon>
-                                            </a>
-                                        </li>
-                    
-                                        <li>
-                                            <a href="#" class="social-link">
-                                                <ion-icon name="logo-linkedin"></ion-icon>
-                                            </a>
-                                        </li>
-                    
-                                    </ul>
-                                </div>
+                                            <li>
+                                                <a href="#" class="social-link">
+                                                    <ion-icon name="logo-facebook"></ion-icon>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#" class="social-link">
+                                                    <ion-icon name="logo-twitter"></ion-icon>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#" class="social-link">
+                                                    <ion-icon name="logo-instagram"></ion-icon>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#" class="social-link">
+                                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
                                 </div>
 
                             </div>
