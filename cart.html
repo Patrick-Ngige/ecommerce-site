@@ -751,28 +751,28 @@
 
 
             @media (max-width: 768px) {
-                .cart-items {
+                .cart-items.cart {
                     padding: 0px;
                     
                 }
-                .main-container {
+                .main-container.cart {
                     gap: .6rem;
                 }
-                .p-price {
+                .p-price.cart {
                     gap: .6rem;
                 }
 
-                .total-amount {
+                .total-amount.cart {
                     width: 100% ;
                     margin-left: unset;
                     padding: .4rem;
                 }
 
-                .title {
-                    width: 100% !important;
+                .title.cart {
+                    width: 90%;
                     padding-left: 0.6rem;
                 }
-                .amount-breakdown {
+                .amount-breakdown.cart {
                     width: 100%;
                     padding: .6rem;
                 }
@@ -787,11 +787,11 @@
                     PRODUCT LIST 
             ====================== -->
 
-                <div class="cart-items">
+                <div class="cart-items cart">
 
                     <h2 class="title" style="width: 90%; margin-left: 5%;margin-bottom: 0;">YOUR CART</h2>
 
-                    <div class="main-container">
+                    <div class="main-container cart">
                         <div class="product-img">
                             <img src="./assets/images/products/clothes-1.jpg" width="100" height="100" alt="">
                         </div>
@@ -866,7 +866,7 @@
                                 <p>Women Round Neck Sweater</p>
                             </div>
 
-                            <div class="p-price">
+                            <div class="p-price cart">
                                 <p>Ksh. 2,000.00</p>
 
                                 <div class="p-size">
@@ -893,10 +893,10 @@
 
         </div>
 
-        <div class="total-amount">
-            <h2 class="title" style="width: 78%; margin-top: 50px;">CART TOTALS</h2>
+        <div class="total-amount cart">
+            <h2 class="title cart" style="width: 78%; margin-top: 50px;">CART TOTALS</h2>
 
-            <div class="amount-breakdown">
+            <div class="amount-breakdown cart">
                 <div class="sub-total">
                     <div class="sub-text">
                         <p>Subtotal</p>
