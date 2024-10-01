@@ -22,6 +22,8 @@
 <body>
 
     <style>
+        @media (max-width: 768px) {
+                  
         .product-container.about {
             scroll-snap-align: start;
             margin-top: .6rem;
@@ -33,7 +35,21 @@
         .showcase-container.about {
             border: none;
             padding: unset;
+            flex-wrap: wrap;
         }
+        .service.about {
+            width: 100%;
+            margin-top: 2rem;
+        }
+        .service-container.about{
+            display: flex;
+            flex-wrap: wrap !important;
+            border: unset;
+            width: 100%;
+            padding: unset;
+
+        }
+    }
     </style>
 
 
@@ -682,11 +698,11 @@
 
                     </div>
 
-                    <div class="service" style="width: 100%;">
+                    <div class="service about" style="width: 100%;">
 
                         <h2 class="title"><span style="color: hsl(0, 0%, 47%);">WHY</span> CHOOSE US</h2>
 
-                        <div class="service-container"
+                        <div class="service-container about"
                             style="display: flex; flex-direction: row; align-items: center; align-content: center; flex-wrap: nowrap;">
 
                             <a href="#" class="service-item"
