@@ -611,7 +611,7 @@
             MAIN
     ================== -->
 
-    <main>
+    <main class="checkout">
 
         <!-- ==================
             PRODUCT
@@ -775,19 +775,38 @@
                 border: 2px solid hsl(353, 100%, 78%);
             }
 
+            .title.checkout {
+                width: 78%; 
+                margin-top: 50px;
+            }
+
             @media (max-width: 768px) {
-                main {
+                .checkout {
                     flex-direction: column;
                 }
-                form  {
+                form.checkout  {
                     padding: 0.6rem 0px 0px;
                 }
-                .total-amount {
+                .total-amount.checkout {
                     width: 100%;
                     margin-left: unset;
+                    padding-bottom: 0;
                 }
-                .amount-breakdown {
+                .title.checkout {
                     width: 100%;
+                    margin-top: unset;
+                }
+                .amount-breakdown.checkout {
+                    width: 100%;
+                }
+                .payment-options.checkout {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 0.6rem;
+                }
+                .checkout-btn button{
+                    margin-right: auto; 
+                    margin-top: 2rem;
                 }
             }
 
@@ -804,7 +823,7 @@
 
                     <h2 class="title" style="width: 90%; margin-left: 5%;margin-bottom: 0;">DELIVERY INFORMATION</h2>
 
-                    <form action="">
+                    <form class="checkout" action="">
                         <div class="name">
                             <input type="text" placeholder="First Name">
                             <input type="text" placeholder="Last Name">
@@ -832,10 +851,10 @@
 
         </div>
 
-        <div class="total-amount">
-            <h2 class="title" style="width: 78%; margin-top: 50px;">CART TOTALS</h2>
+        <div class="total-amount checkout">
+            <h2 class="title checkout">CART TOTALS</h2>
 
-            <div class="amount-breakdown">
+            <div class="amount-breakdown checkout">
                 <div class="sub-total">
                     <div class="sub-text">
                         <p>Subtotal</p>
@@ -876,7 +895,7 @@
                     <p>Select One:</p>
 
 
-                    <div class="payment-options">
+                    <div class="payment-options checkout">
 
                         <label class="image-checkbox">
                             <input type="checkbox" name="image1">
