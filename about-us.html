@@ -21,6 +21,21 @@
 
 <body>
 
+    <style>
+        .product-container.about {
+            scroll-snap-align: start;
+            margin-top: .6rem;
+            width: 90%; 
+            margin-left: 5%;
+            overflow-x: hidden;
+        }
+
+        .showcase-container.about {
+            border: none;
+            padding: unset;
+        }
+    </style>
+
 
     <div class="overlay" data-overlay></div>
 
@@ -95,10 +110,10 @@
 
                 <!-- search container  -->
 
-                <div class="header-search-container" >
-                    <input type="search" name="search" class="search-field"  placeholder="Enter your product name... ">
+                <div class="header-search-container">
+                    <input type="search" name="search" class="search-field" placeholder="Enter your product name... ">
 
-                    <button class="search-btn" >
+                    <button class="search-btn">
                         <ion-icon name="search-outline"></ion-icon>
                     </button>
                 </div>
@@ -612,10 +627,10 @@
             PRODUCT
     ================== -->
 
-        <div class="product-container" style="margin-top: 10px;">
-            <h2 class="title" style="width: 90%; margin-left: 5%;">ABOUT US</h2>
+        <div class="product-container about" >
+            <h2 class="title" >ABOUT US</h2>
             <div class="container">
-                
+
 
                 <!-- =====================
                     PRODUCT FEATURED
@@ -624,7 +639,7 @@
                 <div class="product-featured">
                     <div class="showcase-wrapper has-scrollbar">
 
-                        <div class="showcase-container" style="border: none;">
+                        <div class="showcase-container about" >
 
                             <div class="showcase">
 
@@ -636,20 +651,27 @@
                                 <div class="showcase-content">
 
                                     <p class="showcase-desc">
-                                        Welcome to ShopIT, your one-stop destination for all your shopping needs. We offer a wide range of products at competitive prices, ensuring a seamless shopping experience.
+                                        Welcome to ShopIT, your one-stop destination for all your shopping needs. We
+                                        offer a wide range of products at competitive prices, ensuring a seamless
+                                        shopping experience.
                                     </p>
                                     <br>
 
                                     <p class="showcase-desc">
-                                        At ShopIT, we are committed to exceptional customer service and satisfaction. Our dedicated team works tirelessly to curate a wide selection of items and ensure fast, reliable shipping. Join our community of happy customers and discover the convenience and joy of shopping with ShopIT.
+                                        At ShopIT, we are committed to exceptional customer service and satisfaction.
+                                        Our dedicated team works tirelessly to curate a wide selection of items and
+                                        ensure fast, reliable shipping. Join our community of happy customers and
+                                        discover the convenience and joy of shopping with ShopIT.
                                     </p>
 
                                     <br>
 
                                     <h3 class="showcase-title" style="text-transform: capitalize;">Our Mission</h3>
 
-                                     <p class="showcase-desc">
-                                        Our mission is to provide exceptional value, quality, and customer service. We aim to exceed your expectations and make your shopping experience enjoyable and convenient.
+                                    <p class="showcase-desc">
+                                        Our mission is to provide exceptional value, quality, and customer service. We
+                                        aim to exceed your expectations and make your shopping experience enjoyable and
+                                        convenient.
                                     </p>
 
                                 </div>
@@ -663,57 +685,62 @@
                     <div class="service" style="width: 100%;">
 
                         <h2 class="title"><span style="color: hsl(0, 0%, 47%);">WHY</span> CHOOSE US</h2>
-        
-                        <div class="service-container" style="display: flex; flex-direction: row; align-items: center; align-content: center; flex-wrap: nowrap;">
-        
-                            <a href="#" class="service-item" style="display: flex; flex-direction: column; flex: flex-start;">
-        
+
+                        <div class="service-container"
+                            style="display: flex; flex-direction: row; align-items: center; align-content: center; flex-wrap: nowrap;">
+
+                            <a href="#" class="service-item"
+                                style="display: flex; flex-direction: column; flex: flex-start;">
+
                                 <div class="service-icon">
                                     <ion-icon name="checkmark-circle"></ion-icon>
                                 </div>
-        
+
                                 <div class="service-content">
-        
+
                                     <h3 class="service-title">Quality Assuarance:</h3>
-                                    <p class="service-desc">We ensure that all our products meet high-quality standards, giving you peace of mind with every purchase.</p>
-        
+                                    <p class="service-desc">We ensure that all our products meet high-quality standards,
+                                        giving you peace of mind with every purchase.</p>
+
                                 </div>
-        
+
                             </a>
-        
+
                             <a href="#" class="service-item" style="display: flex; flex-direction: column;">
-        
+
                                 <div class="service-icon">
                                     <ion-icon name="cart"></ion-icon>
                                 </div>
-        
+
                                 <div class="service-content">
-        
+
                                     <h3 class="service-title">Convenience:</h3>
-                                    <p class="service-desc">Shop from the comfort of your home with our easy-to-use platform and fast, reliable shipping.</p>
-        
+                                    <p class="service-desc">Shop from the comfort of your home with our easy-to-use
+                                        platform and fast, reliable shipping.</p>
+
                                 </div>
-        
-                            </a> 
-        
+
+                            </a>
+
                             <a href="#" class="service-item" style="display: flex; flex-direction: column;">
-        
-                                <div class="service-icon" >
+
+                                <div class="service-icon">
                                     <ion-icon name="call"></ion-icon>
                                 </div>
-        
+
                                 <div class="service-content">
-        
+
                                     <h3 class="service-title">Exceptional Customer Service:</h3>
-                                    <p class="service-desc">Our dedicated support team is always ready to assist you with any questions or concerns.</p>
-        
+                                    <p class="service-desc">Our dedicated support team is always ready to assist you
+                                        with any questions or concerns.</p>
+
                                 </div>
-        
+
                             </a>
-        
-        
+
+
                         </div>
-        
+
                     </div>
 
                 </div>
